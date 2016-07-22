@@ -1,50 +1,29 @@
+# Dependencies
+# markdown:         redcarpet
+# pygments:         true
+
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-# relative_permalinks: true
+permalink:        pretty
 
 # Setup
-title:               Python The Full Monty
-tagline:             CSNYC
-url:                 http://bsk.education/CSNYC_Python
-paginate:            1
-baseurl:             "/CSNYC_Python"
+title:            Lanyon
+tagline:          'A Jekyll theme'
+description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://lanyon.getpoole.com
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-
-# About/contact
 author:
-  name:              Ben Samuels-Kalow
-  url:               http://bsk.education
-  email:             bsk@ms223.org
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
 
 # Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/bensk
+version:          2.0.0
 
-# wyyyyyy
+github:
+  repo:           https://github.com/poole/lanyon
+
 gems:
     # - jemoji
     - jekyll-archives
     - jekyll-paginate
-
-
-jekyll-archives:
-  enabled: []
-  layout: 'archive'
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-
-future: true
