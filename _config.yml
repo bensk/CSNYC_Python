@@ -5,8 +5,8 @@ permalink:           pretty
 # relative_permalinks: true
 
 # Setup
-title:               Python The Full Monty
-tagline:             CSNYC
+title:               CSNYC Python
+tagline:
 url:                 http://bsk.education/CSNYC_Python
 paginate:            1
 baseurl:             "/CSNYC_Python"
