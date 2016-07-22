@@ -66,6 +66,12 @@
     
       
     
+      
+    
+      
+    
+      
+    
 
     <a class="sidebar-nav-item" href="https://github.com/poole/lanyon/archive/v2.0.0.zip">Download</a>
     <a class="sidebar-nav-item" href="https://github.com/poole/lanyon">GitHub project</a>
@@ -99,208 +105,628 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/01/02/introducing-lanyon/">
-        Introducing Lanyon
+      <a href="/2016/05/31/methods/">
+        Methods
       </a>
     </h1>
 
-    <span class="post-date">02 Jan 2014</span>
+    <span class="post-date">31 May 2016</span>
 
-    <p>Lanyon is an unassuming <a href="http://jekyllrb.com">Jekyll</a> theme that places content first by tucking away navigation in a hidden drawer. It’s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
+    <h2 id="do-now-in-pycharm">Do Now (in PyCharm)</h2>
+<p>Run this code:</p>
 
-<h3 id="built-on-poole">Built on Poole</h3>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Time</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+ <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">second</span><span class="p">):</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">hour</span> <span class="o">=</span> <span class="n">hour</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">minute</span> <span class="o">=</span> <span class="n">minute</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">second</span> <span class="o">=</span> <span class="n">second</span>
 
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Lanyon here) includes the following:</p>
+<span class="n">time1</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">time2</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
 
-<ul>
-  <li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-  <li>Mobile friendly design and development</li>
-  <li>Easily scalable text and component sizing with <code class="highlighter-rouge">rem</code> units in the CSS</li>
-  <li>Support for a wide gamut of HTML elements</li>
-  <li>Related posts (time-based, because Jekyll) below each post</li>
-  <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
+<span class="k">print</span> <span class="n">time1</span>
+<span class="k">print</span> <span class="n">time2</span>
+</code></pre>
+</div>
 
-<h3 id="lanyon-features">Lanyon features</h3>
+<p><em>What the heck?</em></p>
 
-<p>In addition to the features of Poole, Lanyon adds the following:</p>
+<p><strong>In Google Classroom…</strong></p>
 
-<ul>
-  <li>Toggleable sliding sidebar (built with only CSS) via <strong>☰</strong> link in top corner</li>
-  <li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-  <li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code class="highlighter-rouge">&lt;body&gt;</code> classes</li>
-  <li><a href="https://github.com/poole/lanyon#themes">Eight optional color schemes</a>, available via <code class="highlighter-rouge">&lt;body&gt;</code> classes</li>
-</ul>
+<ol>
+  <li>Looking at the output, how can you tell the difference between <code class="highlighter-rouge">time1</code> and <code class="highlighter-rouge">time2</code>?</li>
+  <li>What can you add to print out the <code class="highlighter-rouge">hour</code>, <code class="highlighter-rouge">minute</code>, and <code class="highlighter-rouge">second</code> attributes of <code class="highlighter-rouge">time1</code>?</li>
+  <li>What happens if you try to add <code class="highlighter-rouge">time1</code> and <code class="highlighter-rouge">time2</code>?</li>
+</ol>
 
-<p><a href="https://github.com/poole/lanyon#readme">Head to the readme</a> to learn more.</p>
+<hr />
 
-<h3 id="browser-support">Browser support</h3>
+<h2 id="methods">Methods</h2>
+<p>We can’t (easily) add the two <code class="highlighter-rouge">Time</code> objects together, but it’s time to fix that.</p>
 
-<p>Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
+<p><strong>We</strong> know that we <strong>should</strong> be able to add two times together, but we need to create a <strong>method</strong> in order for Python to be able to do that. We’ve already seen one <strong>method</strong>: <code class="highlighter-rouge">__init__</code>.</p>
 
-<h3 id="download">Download</h3>
+<p>In order to be able to read our <code class="highlighter-rouge">Time</code>s, we need to turn them into <code class="highlighter-rouge">str</code>ings.</p>
 
-<p>Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.</p>
+<p>We can manually get each:</p>
 
-<p>Thanks!</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">time1</span><span class="o">.</span><span class="n">hour</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">time1</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">time1</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Luckily, we can make the computer do that work for us, every time we use the <code class="highlighter-rouge">Time</code> class</p>
+
+<p>Just like we defined <code class="highlighter-rouge">__init__</code>, we can define a special function <em>inside</em> of the <code class="highlighter-rouge">Time</code> class. A <strong>function</strong> inside of a <strong>class</strong> is called a <strong>method</strong><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<hr />
+
+<h2 id="method-to-the-madness">Method to the Madness</h2>
+<ol>
+  <li>Define a <code class="highlighter-rouge">__str__</code> method. It should start like this:</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Time</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">second</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hour</span> <span class="o">=</span> <span class="n">hour</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">minute</span> <span class="o">=</span> <span class="n">minute</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">second</span> <span class="o">=</span> <span class="n">second</span>
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c"># Notice that methods are indented INSIDE the class and BELOW the __init__ method.</span>
+</code></pre>
+</div>
+<p>This will get called when you print an object, and it should <code class="highlighter-rouge">return</code> a string that is easy to read and understand, like <code class="highlighter-rouge">5:32:0</code>.</p>
+
+<ol>
+  <li>Next, define a <code class="highlighter-rouge">__add__</code> method.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">somethingelse</span><span class="p">):</span>
+<span class="c"># Watch your whitespace!</span>
+</code></pre>
+</div>
+
+<p>It will take in <strong>two</strong> parameters: <code class="highlighter-rouge">self</code> and some <code class="highlighter-rouge">other</code> <code class="highlighter-rouge">Time</code> object. Before you start coding, think about what data Python can and <em>cannot</em> add together. How can we turn <code class="highlighter-rouge">Time</code> objects into data which can be added, and into data to which we can add <code class="highlighter-rouge">:</code> (semicolons!)</p>
+
+<h3 id="test-your-code">Test your code</h3>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># Create at least 3 times:</span>
+<span class="n">time1</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">time2</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">time3</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<span class="c"># Then, run:</span>
+<span class="n">time1</span> <span class="o">+</span> <span class="n">time3</span> <span class="o">+</span> <span class="n">time3</span>
+<span class="c"># What's your output?</span>
+</code></pre>
+</div>
+
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-methodtothemadnesspy"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <code class="highlighter-rouge">Method_To_The_Madness.py</code></h4>
+
+<hr />
+
+<h2 id="practice-with-classes">Practice with Classes</h2>
+<p>Go <a href="https://www.codecademy.com/en/courses/python-intermediate-en-WL8e4/0/1?curriculum_id=4f89dab3d788890003000096">here</a>, and get to lesson 18.</p>
+
+<h2 id="lab">Lab</h2>
+<p>Write a definition for a class named <code class="highlighter-rouge">Kangaroo</code> with the following methods:</p>
+
+<ol>
+  <li>An <code class="highlighter-rouge">__init__</code> method that initializes an attribute named <code class="highlighter-rouge">pouch_contents</code> to an empty list.</li>
+  <li>A method named <code class="highlighter-rouge">put_in_pouch</code> that takes an object of any type and adds it to <code class="highlighter-rouge">pouch_contents</code>.</li>
+  <li>A <code class="highlighter-rouge">__str__</code> method that returns a string representation of the Kangaroo object and the contents of the pouch.</li>
+</ol>
+
+<p>Test your code by creating two Kangaroo objects, assigning them to variables named <code class="highlighter-rouge">kanga</code> and <code class="highlighter-rouge">roo</code>, and then adding <code class="highlighter-rouge">roo</code> to the contents of <code class="highlighter-rouge">kanga</code>’s pouch.</p>
+
+<hr />
+
+<p>This is kind of awesome…</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Hey, that’s the name of the lesson! <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </div>
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/01/01/example-content/">
-        Example content
+      <a href="/2016/05/27/classes-part-ii/">
+        Classes Part II
       </a>
     </h1>
 
-    <span class="post-date">01 Jan 2014</span>
+    <span class="post-date">27 May 2016</span>
 
-    <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+    <h2 id="do-now">Do Now</h2>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pet</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+<span class="n">my_pet</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s">"Nymeria"</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">my_pet</span><span class="o">.</span><span class="n">name</span>
+</code></pre>
 </div>
 
-<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-
-<blockquote>
-  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-</blockquote>
-
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-<h2 id="inline-html-elements">Inline HTML elements</h2>
-
-<p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-
-<ul>
-  <li><strong>To bold text</strong>, use <code class="highlighter-rouge">&lt;strong&gt;</code>.</li>
-  <li><em>To italicize text</em>, use <code class="highlighter-rouge">&lt;em&gt;</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="highlighter-rouge">title</code> attribute for the full phrase.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="highlighter-rouge">&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code class="highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="highlighter-rouge">&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code class="highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="highlighter-rouge">&lt;sub&gt;</code>.</li>
-</ul>
-
-<p>Most of these elements are styled by browsers with few modifications on our part.</p>
-
-<h2 id="heading">Heading</h2>
-
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-<h3 id="code">Code</h3>
-
-<p>Cum sociis natoque penatibus et magnis dis <code class="highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console
-</span>
-
-<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments
-</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"return a + b"</span><span class="p">);</span>
-
-<span class="c1">// Call the function
-</span>
-<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span></code></pre></figure>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-
-<h3 id="lists">Lists</h3>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-<ul>
-  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-  <li>Donec id elit non mi porta gravida at eget metus.</li>
-  <li>Nulla vitae elit libero, a pharetra augue.</li>
-</ul>
-
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+<p><strong>Answer in comments:</strong></p>
 
 <ol>
-  <li>Vestibulum id ligula porta felis euismod semper.</li>
-  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+  <li>What do you think <code class="highlighter-rouge">__init__ </code> does?`?</li>
+  <li>What if you wanted to initialize all pet objects with a name and a color?</li>
+  <li>How would you modify the code to create a pet object with a name of “Nymeria” and a color of “brown”?</li>
 </ol>
 
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+<hr />
 
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
+<h2 id="classes--blueprints">Classes == Blueprints</h2>
 
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
+<p>Classes are like blueprints. When I call the <code class="highlighter-rouge">Pet</code> class above:</p>
 
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">my_pet</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s">"Nymeria"</span><span class="p">)</span>
+</code></pre>
+</div>
 
-<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+<p>Python creates a new <strong>object</strong> that is an <strong>instance</strong> of the <code class="highlighter-rouge">Pet</code> <strong>class</strong>. Let’s take a second to absorb that. I can make many <code class="highlighter-rouge">Pet</code>s by <strong>instantiating</strong> (creating) more <strong>instances</strong>.</p>
 
-<h3 id="tables">Tables</h3>
+<ul>
+  <li>Classes are like blueprints or definitions for “chunks” of code.</li>
+  <li>“Instantiate” just means to create an <strong>object</strong> from the <strong>class</strong>.</li>
+  <li>The resulting “chunk” is called an object(<code class="highlighter-rouge">Pet("Nymeria")</code>) and you then assign it to a variable (<code class="highlighter-rouge">my_pet</code>) to work with it.</li>
+</ul>
 
-<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><strong><a href="http://bsk.education/CS11/2016/05/24/classes/">Last class</a></strong> we added attributes <strong>after</strong> the class was instantiated, but <code class="highlighter-rouge">self</code> allows for us to assign attributes at the beginning. When we build classes, we don’t want to randomly add attributes. We want to go in with a <strong>blueprint</strong>.</p>
+
+<h2 id="practice-objects">Practice Objects</h2>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Song</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lyrics</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lyrics</span> <span class="o">=</span> <span class="n">lyrics</span>
+
+    <span class="k">def</span> <span class="nf">sing_me_a_song</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">lyrics</span><span class="p">:</span>
+            <span class="k">print</span> <span class="n">line</span>
+
+<span class="n">happy_bday</span> <span class="o">=</span> <span class="n">Song</span><span class="p">([</span><span class="s">"Happy birthday to you"</span><span class="p">,</span>
+                   <span class="s">"These lyrics are copywrighted"</span><span class="p">,</span>
+                   <span class="s">"So I'll stop here"</span><span class="p">])</span>
+
+<span class="n">hotline_bling</span> <span class="o">=</span> <span class="n">Song</span><span class="p">([</span><span class="s">"You used to call me on my"</span><span class="p">,</span>
+                      <span class="s">"You used to, you used to"</span><span class="p">,</span>
+                      <span class="s">"Yeah"</span><span class="p">,])</span>
+<span class="c"># This is your daily reminder that Drake is Canadian</span>
+
+<span class="n">happy_bday</span><span class="o">.</span><span class="n">sing_me_a_song</span><span class="p">()</span>
+<span class="n">hotline_bling</span><span class="o">.</span><span class="n">sing_me_a_song</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<h4 id="why-do-i-need-self-when-i-make-init--or-other-functions-for-classes">Why do I need self when I make <code class="highlighter-rouge">__init__ </code> or other functions for classes?</h4>
+
+<p>If you don’t have <code class="highlighter-rouge">self.lyrics</code>, then code like <code class="highlighter-rouge">lyrics = "Happy birthday to you"</code> could mean a variable <code class="highlighter-rouge">cheese</code> or the attribute of a particular object. With <code class="highlighter-rouge">self.lyrics = "Happy birthday to you"</code> it’s clear you mean the attribute <code class="highlighter-rouge">self.lyrics</code>.</p>
+
+<ol>
+  <li>Write some more songs using this and make sure you understand that you’re passing a list of strings as the lyrics.</li>
+  <li>Modify the class so that it takes in the title and the artist as well as lyrics of a song (hint: you will need to add more <code class="highlighter-rouge">self._____</code>).</li>
+  <li>Modify the function <code class="highlighter-rouge">sing_me_a_song</code> so it prints out something like:</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Spectacular Failure by Lake Street Dive
+I can't excuse your behavior
+What a spectacular failure
+</code></pre>
+</div>
+
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-songlyricspy"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <code class="highlighter-rouge">SongLyrics.py</code></h4>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/24/classes/">
+        Classes Part I
+      </a>
+    </h1>
+
+    <span class="post-date">24 May 2016</span>
+
+    <h2 id="do-now-in-the-classroom">Do Now (In the Classroom):</h2>
+<p>Pick an object in the classroom. Describe it, using as many adjectives as you can.</p>
+
+<blockquote>
+  <p>“this ball is round. it is pink. it is big.”</p>
+</blockquote>
+
+<hr />
+
+<h2 id="describing-things">Describing Things</h2>
+<p>Normally, in code, you can describe <strong>ONE</strong> thing at a time. You can make:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s">"red"</span>
+<span class="n">shape</span> <span class="o">=</span> <span class="s">"round"</span>
+</code></pre>
+</div>
+
+<p>But what if we want to compare <strong>TWO</strong> things? Well we could always:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">ball1size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">ball2size</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">ball1color</span> <span class="o">=</span> <span class="n">red</span>
+<span class="n">ball2color</span> <span class="o">=</span> <span class="n">blue</span>
+<span class="n">ball1shape</span> <span class="o">=</span> <span class="nb">round</span>
+<span class="n">ball2shape</span> <span class="o">=</span> <span class="nb">round</span>
+<span class="c"># Ugh much work</span>
+</code></pre>
+</div>
+
+<p>But that’s complicated, and hard to keep track of. And what if we want to add another ball? Do we need to add 3 <strong>MORE</strong> statements to describe that ball?</p>
+
+<p>What if we could make our own <code class="highlighter-rouge">objects</code> in code, with <code class="highlighter-rouge">attributes</code>, just like objects in the real world?</p>
+
+<p>Once we write down that balls have the attributes <code class="highlighter-rouge">size</code>, <code class="highlighter-rouge">color</code>, and <code class="highlighter-rouge">shape</code>, we can just create a <code class="highlighter-rouge">class</code>, so that we can make new balls easily. These new <code class="highlighter-rouge">balls</code> come with the attributes already created.</p>
+
+<p>Basically, this makes code easier and less complicated, and lets us treat each <code class="highlighter-rouge">ball</code> as its own thing, and not as a bunch of separate things with the same sticker on them.</p>
+
+<p><strong>Take a look at this mess. How would you print out the full name of each pet?</strong></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">my_pet_1</span> <span class="o">=</span> <span class="s">'pet'</span>
+<span class="n">my_pet_1_type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_1_noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_1_full_name</span> <span class="o">=</span> <span class="s">'Ghost'</span>
+
+<span class="n">my_pet_2</span> <span class="o">=</span> <span class="s">'pet'</span>
+<span class="n">my_pet_2_type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_2_noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_2_full_name</span> <span class="o">=</span> <span class="s">'Nymeria'</span>
+
+<span class="n">my_pet_3</span> <span class="o">=</span> <span class="s">'pet'</span>
+<span class="n">my_pet_3_type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_3_noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_3_full_name</span> <span class="o">=</span> <span class="s">'Summer'</span>
+
+<span class="n">my_pets</span> <span class="o">=</span> <span class="p">[</span><span class="n">my_pet_1</span><span class="p">,</span> <span class="n">my_pet_2</span><span class="p">,</span> <span class="n">my_pet_3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="n">my_pets</span><span class="p">:</span>
+    <span class="c">## print full name of each pet</span>
+</code></pre>
+</div>
+
+<p><strong>Ugh that’s terrible</strong></p>
+
+<h2 id="classes">Classes</h2>
+<p>We’ve seen a bunch of different kind of built-in data in Python: integers, floats, strings, booleans, lists, dictionaries…</p>
+
+<p>A <code class="highlighter-rouge">class</code> is a way to define our own type of data.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pet</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="s">"""Represents a pet"""</span>
+
+<span class="n">my_pet_1</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+<span class="n">my_pet_1</span><span class="o">.</span><span class="nb">type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_1</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_1</span><span class="o">.</span><span class="n">full_name</span> <span class="o">=</span> <span class="s">'Ghost'</span>
+
+<span class="n">my_pet_2</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+<span class="n">my_pet_2</span><span class="o">.</span><span class="nb">type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_2</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_2</span><span class="o">.</span><span class="n">full_name</span> <span class="o">=</span> <span class="s">'Nymeria'</span>
+
+<span class="n">my_pet_3</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+<span class="n">my_pet_3</span><span class="o">.</span><span class="nb">type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_3</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_3</span><span class="o">.</span><span class="n">full_name</span> <span class="o">=</span> <span class="s">'Summer'</span>
+
+<span class="n">my_pets</span> <span class="o">=</span> <span class="p">[</span><span class="n">my_pet_1</span><span class="p">,</span> <span class="n">my_pet_2</span><span class="p">,</span> <span class="n">my_pet_3</span><span class="p">]</span>
+<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_pets</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="n">my_pets</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">pet</span><span class="o">.</span><span class="n">full_name</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">my_pet_1</code>,<code class="highlighter-rouge">my_pet_2</code>, and <code class="highlighter-rouge">my_pet_3</code> are all <strong>instances</strong> of the <code class="highlighter-rouge">Pet</code> <strong>class.</strong> They’re have different <strong>attributes</strong>.</p>
+
+<hr />
+
+<h2 id="span-classmega-octicon-octicon-mortar-boardspan-create-a-color-class"><span class="mega-octicon octicon-mortar-board"></span> Create a Color Class</h2>
+<p>In this lab we will create a class that will represent colors and build a function to combine two colors.</p>
+
+<h3 id="how-do-colors-even">How do colors even</h3>
+<p>RGB is a way of storing color data. R stands for red, G stands for green, and B stands for blue. Each color is given a value from 0 to 255.</p>
+
+<p>You can use this tool to see what different colors are:<a href="http://www.rapidtables.com/web/color/RGB_Color.htm">http://www.rapidtables.com/web/color/RGB_Color.htm</a></p>
+
+<p><img src="https://media.24ways.org/2009/01/f1.gif" alt="https://media.24ways.org/2009/01/f1.gif" /></p>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
+      <th>Specification</th>
+      <th style="text-align: center">Points</th>
     </tr>
   </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
   <tbody>
     <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
+      <td>Create a <strong>class</strong>, <code class="highlighter-rouge">Color</code>.</td>
+      <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
+      <td><strong>Instantiate</strong> at least 3 colors.</td>
+      <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
+      <td>Add <strong>attributes</strong> of r, g, and b to those instances.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Define a function, <code class="highlighter-rouge">add_color(color1, color2)</code>, which takes in two colors and returns a color that is the average of the two reds, greens, and blues.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Test your function and see if it accurately returns colors</td>
+      <td style="text-align: center">1</td>
     </tr>
   </tbody>
 </table>
 
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-<hr />
-
-<p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a></p>
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-colorclasspy"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <code class="highlighter-rouge">ColorClass.py</code></h4>
 
   </div>
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2013/12/31/whats-jekyll/">
-        What's Jekyll?
+      <a href="/2016/05/23/todo-list-app/">
+        Todo List App
       </a>
     </h1>
 
-    <span class="post-date">31 Dec 2013</span>
+    <span class="post-date">23 May 2016</span>
 
-    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
+    <h2 id="span-classmega-octicon-octicon-tasklistspan-todo-list-app"><span class="mega-octicon octicon-tasklist"></span> Todo List App</h2>
 
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
+<p>We’re going to create to-do list app.</p>
 
-<p>It’s an immensely useful tool and one we encourage you to use here with Hyde.</p>
+<p><span class="mega-octicon octicon-file-code"></span>
+In PyCharm, create a file called <code class="highlighter-rouge">ToDo</code></p>
 
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+      <th style="text-align: center">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Empty dictionary to store information</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Key for each day of the week</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Each key has a list value that stores items</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>User is prompted</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>User can type <code class="highlighter-rouge">add</code> program will ask what day and add it correctly</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>User can type <code class="highlighter-rouge">get</code> and the program will ask for the day and print the values</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td><strong>Extensions</strong></td>
+      <td style="text-align: center"><strong>Points</strong></td>
+    </tr>
+    <tr>
+      <td>Use .split() to allow the user to type <code class="highlighter-rouge">get Friday</code> and see the values</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Use .split() to make <code class="highlighter-rouge">add Friday watch tv and relax</code> update the list</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td style="text-align: center">_ / 8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example Output</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>What would you like to do?
+add
+What day?
+Friday
+What would you like to add to Friday's to-do list?
+practice clarinet
+What would you like to do?
+get
+What day?
+Friday
+You have to practice clarinet.
+What would you like to do?
+</code></pre>
+</div>
+
+<h2 id="our-notes">Our notes</h2>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># some way to add</span>
+<span class="c"># some way to read</span>
+
+
+<span class="n">some_dictionary</span><span class="o">=</span><span class="p">{</span>
+    <span class="s">"monday"</span><span class="p">:[]</span>
+
+    <span class="c">#days of the week</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">action</span><span class="p">,</span><span class="n">day</span><span class="p">):</span>
+    <span class="c"># loop this question...</span>
+        <span class="c">#append the action to the list value of the day keys</span>
+        <span class="n">some_dictionary</span><span class="p">[</span><span class="n">day</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+    <span class="c">#until you...</span>
+    <span class="c"># I need an option to call choice()</span>
+
+<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">day</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">some_dictionary</span><span class="p">[</span><span class="n">day</span><span class="p">]</span>
+    <span class="c"># I need an option to call choice()</span>
+
+<span class="k">def</span> <span class="nf">choice</span><span class="p">():</span>
+    <span class="n">user_choice</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"How can I help you?"</span><span class="p">)</span>
+    <span class="c"># if they choose 'add' call add()</span>
+    <span class="c"># if they choose 'get' call get()</span>
+<span class="n">add</span><span class="p">(</span><span class="s">"something"</span><span class="p">,</span> <span class="s">"monday"</span><span class="p">)</span>
+
+<span class="n">get</span><span class="p">(</span><span class="s">"monday"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-todopy"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <code class="highlighter-rouge">ToDo.py</code></h4>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/20/dictionaries-of-lists/">
+        Dictionaries of Lists
+      </a>
+    </h1>
+
+    <span class="post-date">20 May 2016</span>
+
+    <h2 id="span-classmega-octicon-octicon-clockspan-do-now-answer-in-google-classroom"><span class="mega-octicon octicon-clock"></span> Do Now (answer in Google Classroom)</h2>
+
+<!-- ```python
+list_dictionaries = {
+ 'i': [1, 3, 4],
+ 'am': [1, 2, 3, 4]
+}
+print list_dictionaries
+# What type of data is list_dictionaries?
+# What type of data are list_dictionaries keys?
+# What type of data are list_dictionaries values??
+# Update the value of 'am' to [1, 2, 3, 4, 5]
+``` -->
+
+<p>WITHOUT using PyCharm, predict what is printed by the code below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">this_is_a_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s">"cat"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span> <span class="s">"dog"</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s">"elephant"</span><span class="p">:</span><span class="mi">23</span><span class="p">}</span>
+<span class="k">print</span> <span class="n">this_is_a_dictionary</span><span class="p">[</span><span class="s">"dog"</span><span class="p">]</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="span-classmega-octicon-octicon-mortar-boardspan-mini-lesson"><span class="mega-octicon octicon-mortar-board"></span> Mini-Lesson</h2>
+
+<p>Last time, we saw that dictionaries can pair keys of any data type with values of any data type. We paired strings with strings last time, but now we’re going to pair strings with lists.</p>
+
+<p>Let’s review how we <strong>add</strong> values to a dictionary.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">list_dictionaries</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="s">'i'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+ <span class="s">'am'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">list_dictionaries</span><span class="p">[</span><span class="s">'groot'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="c"># update the key 'groot' with a list value</span>
+</code></pre>
+</div>
+
+<p>What if I know what to add the string <code class="highlighter-rouge">"6"</code> to the key <code class="highlighter-rouge">"groot"</code>? How do we add things to a list? <code class="highlighter-rouge">.append()</code>!</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">list_dictionaries</span><span class="p">[</span><span class="s">'groot'</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"six"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="span-classmega-octicon-octicon-tasklistspan-todo-list-app"><span class="mega-octicon octicon-tasklist"></span> Todo List App</h2>
+
+<p>We’re going to create to-do list app.</p>
+
+<p><span class="mega-octicon octicon-file-code"></span>
+In PyCharm, create a file called <code class="highlighter-rouge">ToDo</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Specification</th>
+      <th style="text-align: center">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Empty dictionary to store information</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Key for each day of the week</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Each key has a list value that stores items</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">User is prompted</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">User can type <code class="highlighter-rouge">add</code> program will ask what day and add it correctly</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">User can type <code class="highlighter-rouge">get</code> and the program will ask for the day and print the values</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Extensions</strong></td>
+      <td style="text-align: center"><strong>Points</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Use .split() to allow the user to type <code class="highlighter-rouge">get Friday</code> and see the values</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Use .split() to make <code class="highlighter-rouge">add Friday watch tv and relax</code> update the list</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Total</strong></td>
+      <td style="text-align: center">_ / 8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example Output</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>What would you like to do?
+add
+What day?
+Friday
+What would you like to add to Friday's to-do list?
+practice clarinet
+What would you like to do?
+get
+What day?
+Friday
+You have to practice clarinet.
+What would you like to do?
+</code></pre>
+</div>
+
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-todopy"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <code class="highlighter-rouge">ToDo.py</code></h4>
 
   </div>
   
@@ -308,7 +734,7 @@
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="/page2">Older</a>
   
   
     <span class="pagination-item newer">Newer</span>

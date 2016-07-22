@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Classes Part I &middot; Lanyon
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="https://github.com/poole/lanyon/archive/v2.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="https://github.com/poole/lanyon">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v2.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Lanyon</a>
+            <small>A Jekyll theme</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Classes Part I</h1>
+  <span class="post-date">24 May 2016</span>
+  <h2 id="do-now-in-the-classroom">Do Now (In the Classroom):</h2>
+<p>Pick an object in the classroom. Describe it, using as many adjectives as you can.</p>
+
+<blockquote>
+  <p>“this ball is round. it is pink. it is big.”</p>
+</blockquote>
+
+<hr />
+
+<h2 id="describing-things">Describing Things</h2>
+<p>Normally, in code, you can describe <strong>ONE</strong> thing at a time. You can make:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s">"red"</span>
+<span class="n">shape</span> <span class="o">=</span> <span class="s">"round"</span>
+</code></pre>
+</div>
+
+<p>But what if we want to compare <strong>TWO</strong> things? Well we could always:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">ball1size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">ball2size</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">ball1color</span> <span class="o">=</span> <span class="n">red</span>
+<span class="n">ball2color</span> <span class="o">=</span> <span class="n">blue</span>
+<span class="n">ball1shape</span> <span class="o">=</span> <span class="nb">round</span>
+<span class="n">ball2shape</span> <span class="o">=</span> <span class="nb">round</span>
+<span class="c"># Ugh much work</span>
+</code></pre>
+</div>
+
+<p>But that’s complicated, and hard to keep track of. And what if we want to add another ball? Do we need to add 3 <strong>MORE</strong> statements to describe that ball?</p>
+
+<p>What if we could make our own <code class="highlighter-rouge">objects</code> in code, with <code class="highlighter-rouge">attributes</code>, just like objects in the real world?</p>
+
+<p>Once we write down that balls have the attributes <code class="highlighter-rouge">size</code>, <code class="highlighter-rouge">color</code>, and <code class="highlighter-rouge">shape</code>, we can just create a <code class="highlighter-rouge">class</code>, so that we can make new balls easily. These new <code class="highlighter-rouge">balls</code> come with the attributes already created.</p>
+
+<p>Basically, this makes code easier and less complicated, and lets us treat each <code class="highlighter-rouge">ball</code> as its own thing, and not as a bunch of separate things with the same sticker on them.</p>
+
+<p><strong>Take a look at this mess. How would you print out the full name of each pet?</strong></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">my_pet_1</span> <span class="o">=</span> <span class="s">'pet'</span>
+<span class="n">my_pet_1_type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_1_noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_1_full_name</span> <span class="o">=</span> <span class="s">'Ghost'</span>
+
+<span class="n">my_pet_2</span> <span class="o">=</span> <span class="s">'pet'</span>
+<span class="n">my_pet_2_type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_2_noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_2_full_name</span> <span class="o">=</span> <span class="s">'Nymeria'</span>
+
+<span class="n">my_pet_3</span> <span class="o">=</span> <span class="s">'pet'</span>
+<span class="n">my_pet_3_type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_3_noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_3_full_name</span> <span class="o">=</span> <span class="s">'Summer'</span>
+
+<span class="n">my_pets</span> <span class="o">=</span> <span class="p">[</span><span class="n">my_pet_1</span><span class="p">,</span> <span class="n">my_pet_2</span><span class="p">,</span> <span class="n">my_pet_3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="n">my_pets</span><span class="p">:</span>
+    <span class="c">## print full name of each pet</span>
+</code></pre>
+</div>
+
+<p><strong>Ugh that’s terrible</strong></p>
+
+<h2 id="classes">Classes</h2>
+<p>We’ve seen a bunch of different kind of built-in data in Python: integers, floats, strings, booleans, lists, dictionaries…</p>
+
+<p>A <code class="highlighter-rouge">class</code> is a way to define our own type of data.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pet</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="s">"""Represents a pet"""</span>
+
+<span class="n">my_pet_1</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+<span class="n">my_pet_1</span><span class="o">.</span><span class="nb">type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_1</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_1</span><span class="o">.</span><span class="n">full_name</span> <span class="o">=</span> <span class="s">'Ghost'</span>
+
+<span class="n">my_pet_2</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+<span class="n">my_pet_2</span><span class="o">.</span><span class="nb">type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_2</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_2</span><span class="o">.</span><span class="n">full_name</span> <span class="o">=</span> <span class="s">'Nymeria'</span>
+
+<span class="n">my_pet_3</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+<span class="n">my_pet_3</span><span class="o">.</span><span class="nb">type</span> <span class="o">=</span> <span class="s">'direwolf'</span>
+<span class="n">my_pet_3</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="s">'howl'</span>
+<span class="n">my_pet_3</span><span class="o">.</span><span class="n">full_name</span> <span class="o">=</span> <span class="s">'Summer'</span>
+
+<span class="n">my_pets</span> <span class="o">=</span> <span class="p">[</span><span class="n">my_pet_1</span><span class="p">,</span> <span class="n">my_pet_2</span><span class="p">,</span> <span class="n">my_pet_3</span><span class="p">]</span>
+<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_pets</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="n">my_pets</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">pet</span><span class="o">.</span><span class="n">full_name</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">my_pet_1</code>,<code class="highlighter-rouge">my_pet_2</code>, and <code class="highlighter-rouge">my_pet_3</code> are all <strong>instances</strong> of the <code class="highlighter-rouge">Pet</code> <strong>class.</strong> They’re have different <strong>attributes</strong>.</p>
+
+<hr />
+
+<h2 id="span-classmega-octicon-octicon-mortar-boardspan-create-a-color-class"><span class="mega-octicon octicon-mortar-board"></span> Create a Color Class</h2>
+<p>In this lab we will create a class that will represent colors and build a function to combine two colors.</p>
+
+<h3 id="how-do-colors-even">How do colors even</h3>
+<p>RGB is a way of storing color data. R stands for red, G stands for green, and B stands for blue. Each color is given a value from 0 to 255.</p>
+
+<p>You can use this tool to see what different colors are:<a href="http://www.rapidtables.com/web/color/RGB_Color.htm">http://www.rapidtables.com/web/color/RGB_Color.htm</a></p>
+
+<p><img src="https://media.24ways.org/2009/01/f1.gif" alt="https://media.24ways.org/2009/01/f1.gif" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+      <th style="text-align: center">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Create a <strong>class</strong>, <code class="highlighter-rouge">Color</code>.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td><strong>Instantiate</strong> at least 3 colors.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Add <strong>attributes</strong> of r, g, and b to those instances.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Define a function, <code class="highlighter-rouge">add_color(color1, color2)</code>, which takes in two colors and returns a color that is the average of the two reds, greens, and blues.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td>Test your function and see if it accurately returns colors</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-colorclasspy"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <code class="highlighter-rouge">ColorClass.py</code></h4>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/05/31/methods/">
+            Methods
+            <small>31 May 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/05/27/classes-part-ii/">
+            Classes Part II
+            <small>27 May 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/05/23/todo-list-app/">
+            Todo List App
+            <small>23 May 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Lanyon &middot; A Jekyll theme
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="https://github.com/poole/lanyon/archive/v2.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="https://github.com/poole/lanyon">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v2.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Lanyon</a>
+            <small>A Jekyll theme</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/04/19/scope/">
+        Scope
+      </a>
+    </h1>
+
+    <span class="post-date">19 Apr 2016</span>
+
+    <h2 id="do-now-in-notebook">⏳ Do Now (in notebook)</h2>
+
+<p>Rank the following from easiest to hardest:</p>
+
+<ol>
+  <li>Importing built-in functions</li>
+  <li>Using <code class="highlighter-rouge">randint</code></li>
+  <li>Abstraction/creating functions</li>
+  <li>Passing int/str/float/bool parameters into functions</li>
+  <li>Calling a function</li>
+  <li>List syntax</li>
+  <li>Return vs print</li>
+</ol>
+
+<p>We will have a quiz next class covering all of the above topics. Is there any topic you would like to focus on and cover more of? <br /><br /></p>
+
+<p>Type the following into the terminal and run the program:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'d'</span><span class="p">]</span>
+<span class="c"># input: a list of strings</span>
+<span class="c"># output: None</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">list_argument</span><span class="p">):</span>
+	<span class="n">list_argument</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">'z'</span>
+<span class="k">print</span> <span class="n">my_list</span>
+<span class="n">my_function</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">my_list</span>
+</code></pre>
+</div>
+<p>What happened? Try writing a similar program but passing in integers instead of a list. What happens?</p>
+
+<hr />
+
+<h2 id="reading">📖 Reading</h2>
+
+<h3 id="variables-and-parameters-are-local">Variables and parameters are local</h3>
+
+<p>When you create a variable inside a function, it is <strong>local</strong>, which means that it only exists inside the function. For example:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">global_variable</span> <span class="o">=</span> <span class="s">'bob'</span>
+
+<span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
+    <span class="n">local_variable</span> <span class="o">=</span> <span class="s">'bob'</span>
+
+<span class="k">print</span> <span class="n">global_variable</span> <span class="c">#what actually prints?</span>
+<span class="k">print</span> <span class="n">local_variable</span>  <span class="c">#what actually prints?</span>
+</code></pre>
+</div>
+
+<p>Another example:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">together</span><span class="p">(</span><span class="n">part1</span><span class="p">,</span> <span class="n">part2</span><span class="p">):</span>
+    <span class="n">cat</span> <span class="o">=</span> <span class="n">part1</span> <span class="o">+</span> <span class="n">part2</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>This function takes two parameters <sup>(<code class="highlighter-rouge">part1</code> and <code class="highlighter-rouge">part2</code>)</sup> , adds them, and prints the result twice. Here is an example that uses it:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">line1</span> <span class="o">=</span> <span class="s">'Hello there, '</span>
+<span class="n">line2</span> <span class="o">=</span> <span class="s">'children.'</span>
+<span class="n">together</span><span class="p">(</span><span class="n">line1</span><span class="p">,</span> <span class="n">line2</span><span class="p">)</span>
+<span class="c"># What prints?</span>
+</code></pre>
+</div>
+<p>When <code class="highlighter-rouge">together</code> terminates, the variable cat (inside <code class="highlighter-rouge">together()</code>) is destroyed. What happens if we try to print it?</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span>
+<span class="nb">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s">'cat'</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</code></pre>
+</div>
+
+<p>Parameters are also local. For example, outside <code class="highlighter-rouge">together</code>, there is no such thing as <code class="highlighter-rouge">part1</code> or <code class="highlighter-rouge">part2</code>.</p>
+
+<h3 id="aliasing">Aliasing</h3>
+
+<p>If <code class="highlighter-rouge">a</code> refers to an object and you assign <code class="highlighter-rouge">b = a</code>, then both variables refer to the same object:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">b</span> <span class="ow">is</span> <span class="n">a</span>
+<span class="bp">True</span>
+</code></pre>
+</div>
+
+<h3 id="local-global-build-in-lbg">Local, Global, Build-in <code class="highlighter-rouge">LBG</code></h3>
+
+<p>Python understands names at three <strong>scopes</strong>: <code class="highlighter-rouge">l</code>ocal, then <code class="highlighter-rouge">g</code>lobal, then <code class="highlighter-rouge">b</code>uilt-in.</p>
+
+<hr />
+
+<h2 id="lab">🖥 Lab</h2>
+
+<p><span class="mega-octicon octicon-file-code"></span>
+<kbd>In PyCharm, create a new file called <mark>Scope_Lab.py</mark></kbd></p>
+
+<h3 id="aliasing-1">Aliasing</h3>
+
+<p>Will updating b affect a? Explain why or why not?</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+</code></pre>
+</div>
+
+<p>Predict what <code class="highlighter-rouge">my_list</code> list will print out when this code is run. If you are not sure check the code by copying and running it.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># input: a list of ints</span>
+<span class="c"># output: an int</span>
+<span class="k">def</span> <span class="nf">update_list</span><span class="p">(</span><span class="n">a_list</span><span class="p">):</span>
+    <span class="n">a_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s">"yo"</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">update_list</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">my_list</span>
+</code></pre>
+</div>
+
+<h3 id="scope">Scope</h3>
+
+<p>Label each variable as global or local.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">var_1</span> <span class="o">=</span> <span class="s">"kittens"</span>
+<span class="n">var_2</span> <span class="o">=</span> <span class="s">"cookies"</span>
+<span class="c"># input: a string</span>
+<span class="c"># output: a string</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">my_favorite_things</span><span class="p">):</span>
+    <span class="n">song_lyrics</span> <span class="o">=</span> <span class="s">"rain drops on roses,"</span>
+    <span class="n">combined_song</span> <span class="o">=</span> <span class="n">song_lyrics</span> <span class="o">+</span> <span class="n">my_favorite_things</span>
+    <span class="k">return</span> <span class="n">combined_song</span>
+<span class="c"># input: a string</span>
+<span class="c"># output: a string</span>
+<span class="k">def</span> <span class="nf">my_function_2</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">item2</span><span class="p">):</span>
+    <span class="n">full_lyrics</span> <span class="o">=</span> <span class="n">item</span> <span class="o">+</span> <span class="s">"on "</span> <span class="o">+</span> <span class="n">item2</span>
+    <span class="n">full_song</span> <span class="o">=</span> <span class="n">my_function</span><span class="p">(</span><span class="n">full_lyrics</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">full_song</span>
+<span class="n">my_song</span> <span class="o">=</span> <span class="n">my_function_2</span><span class="p">(</span><span class="n">var_1</span><span class="p">,</span> <span class="n">var_2</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Write down what (if anything) is wrong with the following code. If there was an issue write out how to fix it. If you are unsure copy and run the code and fix it.</strong></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">var_1</span> <span class="o">=</span> <span class="s">'cat'</span>
+<span class="n">var_2</span> <span class="o">=</span> <span class="s">'dog'</span>
+
+<span class="k">def</span> <span class="nf">print_out_my_favorite</span><span class="p">(</span><span class="n">favorite_pet</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">favorite_pet</span> <span class="o">==</span> <span class="n">var_1</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"My favorite pet is the cat."</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">favorite_pet</span> <span class="o">==</span> <span class="n">var_2</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"My favorite pet is the dog."</span><span class="p">)</span>
+    <span class="n">var_2</span> <span class="o">=</span> <span class="s">"cat"</span>
+
+<span class="n">print_out_my_favorite</span><span class="p">(</span><span class="n">var_1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">var_2</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Write a program that has a global variable, <code class="highlighter-rouge">my_num</code>. Create three functions that update <code class="highlighter-rouge">my_num</code>:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">add2</code>: this function adds 2 to <code class="highlighter-rouge">my_num</code></li>
+  <li><code class="highlighter-rouge">multiply_num</code>: this function takes in a parameter, <code class="highlighter-rouge">multiplier</code>, and multiplies <code class="highlighter-rouge">my_num</code> by that parameter</li>
+  <li><code class="highlighter-rouge">add2_and_multiply</code>: this function takes in a parameter, <code class="highlighter-rouge">multiplier</code>, and calls <code class="highlighter-rouge">add2</code>, then calls <code class="highlighter-rouge">multiply_num</code>.</li>
+</ol>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/04/18/practice-makes-perfect/">
+        Practice Makes Perfect
+      </a>
+    </h1>
+
+    <span class="post-date">18 Apr 2016</span>
+
+    <h2 id="do-now-smallin-google-classroomsmall">Do Now <small>(In Google Classroom)</small></h2>
+
+<p>In Python, what is the difference between return and print?</p>
+
+<hr />
+
+<p><kbd>In PyCharm, create a new file called <mark>practice_makes_perfect.py</mark></kbd></p>
+
+<h2 id="codeisevencode"><code>is_even</code></h2>
+
+<ol>
+  <li>Define a function is_even that will take a number x as input.</li>
+  <li>If x is even, then return True.</li>
+  <li>Otherwise, return False.</li>
+</ol>
+
+<h2 id="codeisintcode"><code>is_int</code></h2>
+
+<ol>
+  <li>Define a function <code>is_int</code> that takes a number <code>x</code> as an input.</li>
+  <li>Have it <code>return True</code> if the number is an integer (as defined above) and <code>False</code> otherwise.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># For example</span>
+
+<span class="n">is_int</span><span class="p">(</span><span class="mf">7.0</span><span class="p">)</span>   <span class="c"># True</span>
+<span class="n">is_int</span><span class="p">(</span><span class="mf">7.5</span><span class="p">)</span>   <span class="c"># False</span>
+<span class="n">is_int</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>    <span class="c"># True</span>
+</code></pre>
+</div>
+
+<h2 id="codedigitsumcode"><code>digit_sum</code></h2>
+
+<p>Write a function called <code>digit_sum</code> that takes a positive integer <code>n</code> as input and returns the sum of all that number’s digits.</p>
+
+<p>For example: <code>digit_sum(1234)</code> should return <code>10</code> which is <code>1 + 2 + 3 + 4</code>.</p>
+
+<p>(Assume that the number you are given will always be positive.)</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/04/15/War/">
+        War!
+      </a>
+    </h1>
+
+    <span class="post-date">15 Apr 2016</span>
+
+    <h2 id="war-card-game">War (Card Game)</h2>
+
+<p>1) Create a program that lets a user play the card game <a href="https://en.wikipedia.org/wiki/War_(card_game)">‘War’</a>.</p>
+
+<p>Your game should:</p>
+
+<ul>
+  <li>Start with a given shuffled deck variable (shuffle function comes from python’s random library, more details below)</li>
+  <li>Ask for player1 and player2’s names.</li>
+  <li>Have a function <code class="highlighter-rouge">player_turn</code>, with the contract shown below:</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#player_turn: takes in a player name, player_name, and draws/removes a card from the deck, prints "user drew card x", and returns the value</span>
+<span class="c">#input: player_name, string</span>
+<span class="c">#output: string</span>
+</code></pre>
+</div>
+<ul>
+  <li>Have a function <code class="highlighter-rouge">compare_scores</code> that takes in the two strings representing the cards drawn and compares the card values. Make sure to write the contract for <code class="highlighter-rouge">compare_scores</code>!</li>
+  <li>For simplicty Jacks will be represented as 11, Queens will be represented as 12, Kings will be represented as 13, and Aces will be represented as 14</li>
+  <li>For simplicty the suit does not matter</li>
+  <li>Include a while loop that keeps the game running until there are no cards in the deck.</li>
+  <li>Keep track of the score.</li>
+  <li>Declare the name of the winner and final score at the end of the game.</li>
+</ul>
+
+<h3 id="deck-shuffling">Deck Shuffling</h3>
+
+<p>While seemingly simple– shuffling a deck is a somewhat complicated problem. Luckily, Python’s random library has a built in shuffle algorithm. Feel free to read the documentation, but we have provided a simple wrapper function that will return to you a shuffled deck of cards.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c"># shuffled_deck: will return a shuffled deck to the user</span>
+<span class="c">#input:</span>
+<span class="c">#output: a list representing a shuffled deck</span>
+<span class="k">def</span> <span class="nf">shuffled_deck</span><span class="p">():</span>
+	<span class="n">basic_deck</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+	<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">basic_deck</span><span class="p">)</span>
+	<span class="k">return</span> <span class="n">basic_deck</span>
+</code></pre>
+</div>
+
+<h3 id="bonus">Bonus!</h3>
+
+<p>Instead of closing the program when the deck is empty, create a way for the user to play again.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/04/11/returnVSprint/">
+        <code>return</code> vs. <code>print</code>
+      </a>
+    </h1>
+
+    <span class="post-date">11 Apr 2016</span>
+
+    <h2 id="do-now">🎯 Do Now</h2>
+<p><strong>Open up PyCharm. Paste the following code into the editor:</strong></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">mystery_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">random_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="c"># What's the range of randoms?</span>
+    <span class="k">if</span> <span class="n">random_number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c"># What's the probability that random_number is greater than 0?</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">z</span>
+<span class="n">mystery_function</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>In comments:</strong></p>
+
+<ol>
+  <li>What happens when your run this code? How do you know what the result was?</li>
+  <li>Keeping the function the same, rewrite the code to print out the value that the function returns.</li>
+</ol>
+
+<h4 id="span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-kbdapril11donowpykbd-"><span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>April11_DoNow.py</kbd> ⭐️</h4>
+
+<hr />
+
+<h2 id="reading">📖 Reading</h2>
+<p><code>print</code> just shows the human user a string representing what is going on inside the computer. The computer cannot make use of that printing. <code>return</code> is how a function gives back a value. This value is often unseen by the human user, but it can be used by the computer in further functions.</p>
+
+<p>On a more expansive note, <code>print</code> will not in any way affect a function. It is simply there for the human user’s benefit. It is very useful for understanding how a program works and can be used in debugging to check various values in a program without interrupting the program.</p>
+
+<blockquote>
+  <h2 id="print-is-for-people-remember-that-slogan-printing-has-no-effect-on-the-ongoing-execution-of-a-program-it-doesnt-assign-a-value-to-a-variable-it-doesnt-return-a-value-from-a-function">Print is for people. Remember that slogan. Printing has no effect on the ongoing execution of a program. It doesn’t assign a value to a variable. It doesn’t return a value from a function.</h2>
+</blockquote>
+
+<hr />
+
+<h2 id="guided-practice">🐍 Guided Practice</h2>
+
+<h4 id="make-a-new-file-called-kbdapril11guidedpracticepykbd-">⭐️ Make a new file called <kbd>April11_GuidedPractice.py</kbd> ⭐️</h4>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># what does this function return ?</span>
+<span class="k">def</span> <span class="nf">print_only</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+   <span class="k">print</span> <span class="n">y</span>
+
+<span class="c"># how is this one different ?</span>
+<span class="k">def</span> <span class="nf">return_only</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+   <span class="k">return</span> <span class="n">y</span>
+
+<span class="c"># let's try to use our 2 functions</span>
+<span class="k">print</span> <span class="s">"running print_only ..."</span>
+<span class="n">print_only</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"running return_only ..."</span>
+<span class="n">return_only</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"printing print_only ..."</span>
+<span class="k">print</span> <span class="n">print_only</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"printing return_only ..."</span>
+<span class="k">print</span> <span class="n">return_only</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"using print_only ..."</span>
+<span class="n">print_only</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">+</span> <span class="mi">6</span>
+
+<span class="k">print</span> <span class="s">"using return_only ..."</span>
+<span class="n">return_only</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">+</span> <span class="mi">6</span>
+</code></pre>
+</div>
+
+<h3 id="check-your-understanding">✅ Check your understanding</h3>
+
+<p><strong>What will the following code output?</strong></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">3</span>
+
+<span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">square</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span>
+
+<span class="k">print</span> <span class="n">g</span><span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>2</li>
+  <li>5</li>
+  <li>7</li>
+  <li>10</li>
+  <li>Error: y has a value but x is an unbound variable inside the square function</li>
+</ol>
+
+<p>Answer on <a href="https://docs.google.com/a/ms223.org/forms/d/1QsTK_Tlw1hIwoJenxGX5beEThv90lWFecT1_fJm_1s8/viewform#start=embed">this Google form</a>.</p>
+
+<!-- ## Independent Work
+War!
+
+War (Card Game)
+
+1) Create a program that lets a user play the card game ['War'](http://www.pagat.com/war/war.html).
+
+Your game should:
+
+* Start with a given shuffled deck variable (shuffle function comes from python's random library, more details below)
+* Ask for player1 and player2's names.
+* Have a function `player_turn`, with the contract shown below:
+
+```python
+#player_turn: takes in a player name, player_name, and draws/removes a card from the deck, prints "user drew card x", and returns the value
+#input: player_name, string
+#output: string
+```
+* Have a function `compare_scores` that takes in the two strings representing the cards drawn and compares the card values. Make sure to write the contract for `compare_scores`!
+* For simplicty Jacks will be represented as 11, Queens will be represented as 12, Kings will be represented as 13, and Aces will be represented as 14
+* For simplicty the suit does not matter
+* Include a while loop that keeps the game running until there are no cards in the deck.
+* Keep track of the score.
+* Declare the name of the winner and final score at the end of the game.
+
+### Deck Shuffling
+
+While seemingly simple-- shuffling a deck is a somewhat comoplicatd problem. Luckily, Python's random library has a built in shuffle algorithm. Feel free to read the documentation, but we have provided a simple wrapper function that will return to you a shuffled deck of cards.
+
+```python
+
+import random
+
+# shuffled_deck: will returna shuffled deck to the user
+#input:
+#output: a list representing a shuffled deck
+def shuffled_deck():
+	basic_deck = range(2, 15) * 4
+	random.shuffle(basic_deck)
+	return basic_deck
+```
+
+###Bonus!
+Instead of closing the program when the deck is empty, create a way for the user to play again. -->
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/04/07/rock-paper-scissors/">
+        Rock || Paper || Scissors
+      </a>
+    </h1>
+
+    <span class="post-date">07 Apr 2016</span>
+
+    <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># Play Rock || Paper || Scissors</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">turns</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'best of...?'</span><span class="p">)</span>
+<span class="n">moves</span> <span class="o">=</span> <span class="p">[</span><span class="s">'rock'</span><span class="p">,</span><span class="s">'paper'</span><span class="p">,</span><span class="s">'scissors'</span><span class="p">]</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">print</span> <span class="s">"Let's play a game of rock paper scissors"</span>
+
+<span class="c"># user_gesture = raw_input("What's your move- rock, paper or scissors?")</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">turns</span><span class="p">):</span>
+    <span class="n">user_gesture</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"What's your move- rock, paper or scissors?"</span><span class="p">)</span>
+    <span class="c"># moved user_gesture to the top of the four loop</span>
+    <span class="n">computer_gesture</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">moves</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">user_gesture</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s">'rock'</span> <span class="ow">and</span> <span class="n">computer_gesture</span> <span class="o">==</span> <span class="s">'scissors'</span> <span class="ow">or</span> <span class="n">user_gesture</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">==</span> <span class="s">'paper'</span> <span class="ow">and</span> <span class="n">computer_gesture</span> <span class="o">==</span> <span class="s">'rock'</span> <span class="ow">or</span> <span class="n">user_gesture</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s">'scissors'</span> <span class="ow">and</span> <span class="n">computer_gesture</span> <span class="o">==</span> <span class="s">'paper'</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Computer plays "</span> <span class="o">+</span> <span class="n">computer_gesture</span>
+        <span class="k">print</span> <span class="s">"You win!"</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="c"># user_gesture = raw_input("What's your move- rock, paper or scissors?")</span>
+    <span class="k">elif</span> <span class="n">user_gesture</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">computer_gesture</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Computer plays "</span> <span class="o">+</span> <span class="n">computer_gesture</span>
+        <span class="k">print</span> <span class="s">"It's a tie!"</span>
+        <span class="c"># user_gesture = raw_input("What's your move- rock, paper or scissors?")</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Computer plays "</span> <span class="o">+</span> <span class="n">computer_gesture</span>
+        <span class="k">print</span> <span class="s">"You loose!"</span>
+        <span class="c"># user_gesture = raw_input("What's your move- rock, paper or scissors?")</span>
+
+<span class="k">print</span> <span class="s">"Your score is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s">" out of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">turns</span><span class="p">)</span>
+</code></pre>
+</div>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page4">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page2">Newer</a>
+    
+  
+</div>
+      </div>
+    </div>
+
+  </body>
+</html>
