@@ -1,7 +1,16 @@
 ---
 layout: page
-title: Python
+title: Lesson 1 👉 <code>Hello World!</code>
 ---
+
+In your IDE of choice, type this, and run the code:
+
+```python
+print "Hello, world."
+# Sorry, I had to.
+```
+
+What did you see some out?
 
 ## ✍ Python Notes
 ✅ A variables stores **data** and gives it a **name**.    

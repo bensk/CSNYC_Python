@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Lesson 0 • <code>Hello World!</code>
+title: Lesson 0 👉 Welcome to Python
 ---
-
-Sorry, I had to...
 
 | 🎯  Learning Targets                                          |
 |:--------------------------------------------------------------|
