@@ -20,3 +20,7 @@ _Try this to find out a type of data:_
 ```python
   print type(input("What's your grade in math?"))
 ```
+
+Test [^1]
+
+[^1]: Test!

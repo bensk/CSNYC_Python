@@ -1,43 +1,629 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>CS11</title>
- <link href="http://bsk.education/CS11/atom.xml" rel="self"/>
- <link href="http://bsk.education/CS11/"/>
- <updated>2016-05-19T16:41:57-04:00</updated>
- <id>http://bsk.education/CS11</id>
+ <title>Python</title>
+ <link href="http://bsk.education/CSNYC_Python/atom.xml" rel="self"/>
+ <link href="http://bsk.education/CSNYC_Python/"/>
+ <updated>2016-07-24T21:12:39-04:00</updated>
+ <id>http://bsk.education/CSNYC_Python</id>
  <author>
    <name>Ben Samuels-Kalow</name>
-   <email>bsk@ms224.org</email>
+   <email>bsk@ms223.org</email>
  </author>
 
  
  <entry>
-   <title>Dictionaries of Lists</title>
-   <link href="http://bsk.education/CS11/2016/05/20/dictionaries-of-lists/"/>
-   <updated>2016-05-20T16:38:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/05/20/dictionaries-of-lists</id>
-   <content type="html">&lt;h2 id=&quot;span-classmega-octicon-octicon-clockspan-do-now-in-google-classroom&quot;&gt;&lt;span class=&quot;mega-octicon octicon-clock&quot;&gt;&lt;/span&gt; Do Now (In Google Classroom)&lt;/h2&gt;
+   <title>Methods</title>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/31/methods/"/>
+   <updated>2016-05-31T22:33:00-04:00</updated>
+   <id>http://bsk.education/CSNYC_Python/2016/05/31/methods</id>
+   <content type="html">&lt;h2 id=&quot;do-now-in-pycharm&quot;&gt;Do Now (in PyCharm)&lt;/h2&gt;
+&lt;p&gt;Run this code:&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list_dictionaries&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;s&quot;&gt;&#39;cat&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
- &lt;span class=&quot;s&quot;&gt;&#39;is&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list_dictionaries&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# What type of data is list_dictionaries?&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# What type of data are list_dictionaries keys?&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# What type of data are list_dictionaries values??&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Update the value of &#39;is&#39; to [1, 2, 3, 4, 5]&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;
+     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;
+     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time2&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;What the heck?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In Google Classroom…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Looking at the output, how can you tell the difference between &lt;code class=&quot;highlighter-rouge&quot;&gt;time1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;time2&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;What can you add to print out the &lt;code class=&quot;highlighter-rouge&quot;&gt;hour&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;minute&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;second&lt;/code&gt; attributes of &lt;code class=&quot;highlighter-rouge&quot;&gt;time1&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;What happens if you try to add &lt;code class=&quot;highlighter-rouge&quot;&gt;time1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;time2&lt;/code&gt;?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;methods&quot;&gt;Methods&lt;/h2&gt;
+&lt;p&gt;We can’t (easily) add the two &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt; objects together, but it’s time to fix that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We&lt;/strong&gt; know that we &lt;strong&gt;should&lt;/strong&gt; be able to add two times together, but we need to create a &lt;strong&gt;method&lt;/strong&gt; in order for Python to be able to do that. We’ve already seen one &lt;strong&gt;method&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In order to be able to read our &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt;s, we need to turn them into &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;ings.&lt;/p&gt;
+
+&lt;p&gt;We can manually get each:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;:&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;:&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Luckily, we can make the computer do that work for us, every time we use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt; class&lt;/p&gt;
+
+&lt;p&gt;Just like we defined &lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt;, we can define a special function &lt;em&gt;inside&lt;/em&gt; of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt; class. A &lt;strong&gt;function&lt;/strong&gt; inside of a &lt;strong&gt;class&lt;/strong&gt; is called a &lt;strong&gt;method&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;method-to-the-madness&quot;&gt;Method to the Madness&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Define a &lt;code class=&quot;highlighter-rouge&quot;&gt;__str__&lt;/code&gt; method. It should start like this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__str__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Notice that methods are indented INSIDE the class and BELOW the __init__ method.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;This will get called when you print an object, and it should &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt; a string that is easy to read and understand, like &lt;code class=&quot;highlighter-rouge&quot;&gt;5:32:0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Next, define a &lt;code class=&quot;highlighter-rouge&quot;&gt;__add__&lt;/code&gt; method.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__add__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;somethingelse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Watch your whitespace!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It will take in &lt;strong&gt;two&lt;/strong&gt; parameters: &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt; and some &lt;code class=&quot;highlighter-rouge&quot;&gt;other&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt; object. Before you start coding, think about what data Python can and &lt;em&gt;cannot&lt;/em&gt; add together. How can we turn &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt; objects into data which can be added, and into data to which we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; (semicolons!)&lt;/p&gt;
+
+&lt;h3 id=&quot;test-your-code&quot;&gt;Test your code&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Create at least 3 times:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Then, run:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time3&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# What&#39;s your output?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-methodtothemadnesspy&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub in a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Method_To_The_Madness.py&lt;/code&gt;&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;practice-with-classes&quot;&gt;Practice with Classes&lt;/h2&gt;
+&lt;p&gt;Go &lt;a href=&quot;https://www.codecademy.com/en/courses/python-intermediate-en-WL8e4/0/1?curriculum_id=4f89dab3d788890003000096&quot;&gt;here&lt;/a&gt;, and get to lesson 18.&lt;/p&gt;
+
+&lt;h2 id=&quot;lab&quot;&gt;Lab&lt;/h2&gt;
+&lt;p&gt;Write a definition for a class named &lt;code class=&quot;highlighter-rouge&quot;&gt;Kangaroo&lt;/code&gt; with the following methods:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;An &lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt; method that initializes an attribute named &lt;code class=&quot;highlighter-rouge&quot;&gt;pouch_contents&lt;/code&gt; to an empty list.&lt;/li&gt;
+  &lt;li&gt;A method named &lt;code class=&quot;highlighter-rouge&quot;&gt;put_in_pouch&lt;/code&gt; that takes an object of any type and adds it to &lt;code class=&quot;highlighter-rouge&quot;&gt;pouch_contents&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;__str__&lt;/code&gt; method that returns a string representation of the Kangaroo object and the contents of the pouch.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Test your code by creating two Kangaroo objects, assigning them to variables named &lt;code class=&quot;highlighter-rouge&quot;&gt;kanga&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;roo&lt;/code&gt;, and then adding &lt;code class=&quot;highlighter-rouge&quot;&gt;roo&lt;/code&gt; to the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;kanga&lt;/code&gt;’s pouch.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is kind of awesome…&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Hey, that’s the name of the lesson! &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
 &lt;/div&gt;
 </content>
  </entry>
  
  <entry>
+   <title>Classes Part II</title>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/27/classes-part-ii/"/>
+   <updated>2016-05-27T22:13:00-04:00</updated>
+   <id>http://bsk.education/CSNYC_Python/2016/05/27/classes-part-ii</id>
+   <content type="html">&lt;h2 id=&quot;do-now&quot;&gt;Do Now&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Nymeria&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer in comments:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What do you think &lt;code class=&quot;highlighter-rouge&quot;&gt;__init__ &lt;/code&gt; does?`?&lt;/li&gt;
+  &lt;li&gt;What if you wanted to initialize all pet objects with a name and a color?&lt;/li&gt;
+  &lt;li&gt;How would you modify the code to create a pet object with a name of “Nymeria” and a color of “brown”?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;classes--blueprints&quot;&gt;Classes == Blueprints&lt;/h2&gt;
+
+&lt;p&gt;Classes are like blueprints. When I call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Pet&lt;/code&gt; class above:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_pet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Nymeria&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Python creates a new &lt;strong&gt;object&lt;/strong&gt; that is an &lt;strong&gt;instance&lt;/strong&gt; of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Pet&lt;/code&gt; &lt;strong&gt;class&lt;/strong&gt;. Let’s take a second to absorb that. I can make many &lt;code class=&quot;highlighter-rouge&quot;&gt;Pet&lt;/code&gt;s by &lt;strong&gt;instantiating&lt;/strong&gt; (creating) more &lt;strong&gt;instances&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Classes are like blueprints or definitions for “chunks” of code.&lt;/li&gt;
+  &lt;li&gt;“Instantiate” just means to create an &lt;strong&gt;object&lt;/strong&gt; from the &lt;strong&gt;class&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;The resulting “chunk” is called an object(&lt;code class=&quot;highlighter-rouge&quot;&gt;Pet(&quot;Nymeria&quot;)&lt;/code&gt;) and you then assign it to a variable (&lt;code class=&quot;highlighter-rouge&quot;&gt;my_pet&lt;/code&gt;) to work with it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://bsk.education/CS11/2016/05/24/classes/&quot;&gt;Last class&lt;/a&gt;&lt;/strong&gt; we added attributes &lt;strong&gt;after&lt;/strong&gt; the class was instantiated, but &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt; allows for us to assign attributes at the beginning. When we build classes, we don’t want to randomly add attributes. We want to go in with a &lt;strong&gt;blueprint&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;practice-objects&quot;&gt;Practice Objects&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Song&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lyrics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lyrics&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lyrics&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sing_me_a_song&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lyrics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;happy_bday&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Song&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Happy birthday to you&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                   &lt;span class=&quot;s&quot;&gt;&quot;These lyrics are copywrighted&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                   &lt;span class=&quot;s&quot;&gt;&quot;So I&#39;ll stop here&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;hotline_bling&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Song&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;You used to call me on my&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                      &lt;span class=&quot;s&quot;&gt;&quot;You used to, you used to&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                      &lt;span class=&quot;s&quot;&gt;&quot;Yeah&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,])&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# This is your daily reminder that Drake is Canadian&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;happy_bday&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sing_me_a_song&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hotline_bling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sing_me_a_song&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;why-do-i-need-self-when-i-make-init--or-other-functions-for-classes&quot;&gt;Why do I need self when I make &lt;code class=&quot;highlighter-rouge&quot;&gt;__init__ &lt;/code&gt; or other functions for classes?&lt;/h4&gt;
+
+&lt;p&gt;If you don’t have &lt;code class=&quot;highlighter-rouge&quot;&gt;self.lyrics&lt;/code&gt;, then code like &lt;code class=&quot;highlighter-rouge&quot;&gt;lyrics = &quot;Happy birthday to you&quot;&lt;/code&gt; could mean a variable &lt;code class=&quot;highlighter-rouge&quot;&gt;cheese&lt;/code&gt; or the attribute of a particular object. With &lt;code class=&quot;highlighter-rouge&quot;&gt;self.lyrics = &quot;Happy birthday to you&quot;&lt;/code&gt; it’s clear you mean the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;self.lyrics&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Write some more songs using this and make sure you understand that you’re passing a list of strings as the lyrics.&lt;/li&gt;
+  &lt;li&gt;Modify the class so that it takes in the title and the artist as well as lyrics of a song (hint: you will need to add more &lt;code class=&quot;highlighter-rouge&quot;&gt;self._____&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;Modify the function &lt;code class=&quot;highlighter-rouge&quot;&gt;sing_me_a_song&lt;/code&gt; so it prints out something like:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Spectacular Failure by Lake Street Dive
+I can&#39;t excuse your behavior
+What a spectacular failure
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-songlyricspy&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub in a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;SongLyrics.py&lt;/code&gt;&lt;/h4&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Classes Part I</title>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/24/classes/"/>
+   <updated>2016-05-24T22:25:00-04:00</updated>
+   <id>http://bsk.education/CSNYC_Python/2016/05/24/classes</id>
+   <content type="html">&lt;h2 id=&quot;do-now-in-the-classroom&quot;&gt;Do Now (In the Classroom):&lt;/h2&gt;
+&lt;p&gt;Pick an object in the classroom. Describe it, using as many adjectives as you can.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“this ball is round. it is pink. it is big.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;describing-things&quot;&gt;Describing Things&lt;/h2&gt;
+&lt;p&gt;Normally, in code, you can describe &lt;strong&gt;ONE&lt;/strong&gt; thing at a time. You can make:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;red&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;round&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But what if we want to compare &lt;strong&gt;TWO&lt;/strong&gt; things? Well we could always:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ball1size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ball2size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ball1color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;red&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ball2color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blue&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ball1shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ball2shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Ugh much work&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But that’s complicated, and hard to keep track of. And what if we want to add another ball? Do we need to add 3 &lt;strong&gt;MORE&lt;/strong&gt; statements to describe that ball?&lt;/p&gt;
+
+&lt;p&gt;What if we could make our own &lt;code class=&quot;highlighter-rouge&quot;&gt;objects&lt;/code&gt; in code, with &lt;code class=&quot;highlighter-rouge&quot;&gt;attributes&lt;/code&gt;, just like objects in the real world?&lt;/p&gt;
+
+&lt;p&gt;Once we write down that balls have the attributes &lt;code class=&quot;highlighter-rouge&quot;&gt;size&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;color&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;shape&lt;/code&gt;, we can just create a &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;, so that we can make new balls easily. These new &lt;code class=&quot;highlighter-rouge&quot;&gt;balls&lt;/code&gt; come with the attributes already created.&lt;/p&gt;
+
+&lt;p&gt;Basically, this makes code easier and less complicated, and lets us treat each &lt;code class=&quot;highlighter-rouge&quot;&gt;ball&lt;/code&gt; as its own thing, and not as a bunch of separate things with the same sticker on them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Take a look at this mess. How would you print out the full name of each pet?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pet&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_1_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;direwolf&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_1_noise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;howl&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_1_full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Ghost&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pet&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_2_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;direwolf&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_2_noise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;howl&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_2_full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Nymeria&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;pet&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_3_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;direwolf&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_3_noise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;howl&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_3_full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Summer&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pet&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;## print full name of each pet&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Ugh that’s terrible&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;classes&quot;&gt;Classes&lt;/h2&gt;
+&lt;p&gt;We’ve seen a bunch of different kind of built-in data in Python: integers, floats, strings, booleans, lists, dictionaries…&lt;/p&gt;
+
+&lt;p&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt; is a way to define our own type of data.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Represents a pet&quot;&quot;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;direwolf&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;howl&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Ghost&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;direwolf&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;howl&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Nymeria&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;direwolf&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;howl&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Summer&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;my_pets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_pet_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pet_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pet_3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_pets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pet&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_pets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;full_name&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;my_pet_1&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;my_pet_2&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;my_pet_3&lt;/code&gt; are all &lt;strong&gt;instances&lt;/strong&gt; of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Pet&lt;/code&gt; &lt;strong&gt;class.&lt;/strong&gt; They’re have different &lt;strong&gt;attributes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;span-classmega-octicon-octicon-mortar-boardspan-create-a-color-class&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mortar-board&quot;&gt;&lt;/span&gt; Create a Color Class&lt;/h2&gt;
+&lt;p&gt;In this lab we will create a class that will represent colors and build a function to combine two colors.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-colors-even&quot;&gt;How do colors even&lt;/h3&gt;
+&lt;p&gt;RGB is a way of storing color data. R stands for red, G stands for green, and B stands for blue. Each color is given a value from 0 to 255.&lt;/p&gt;
+
+&lt;p&gt;You can use this tool to see what different colors are:&lt;a href=&quot;http://www.rapidtables.com/web/color/RGB_Color.htm&quot;&gt;http://www.rapidtables.com/web/color/RGB_Color.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.24ways.org/2009/01/f1.gif&quot; alt=&quot;https://media.24ways.org/2009/01/f1.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Specification&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Points&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Create a &lt;strong&gt;class&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Color&lt;/code&gt;.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Instantiate&lt;/strong&gt; at least 3 colors.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Add &lt;strong&gt;attributes&lt;/strong&gt; of r, g, and b to those instances.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Define a function, &lt;code class=&quot;highlighter-rouge&quot;&gt;add_color(color1, color2)&lt;/code&gt;, which takes in two colors and returns a color that is the average of the two reds, greens, and blues.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Test your function and see if it accurately returns colors&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-colorclasspy&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub in a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;ColorClass.py&lt;/code&gt;&lt;/h4&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Todo List App</title>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/23/todo-list-app/"/>
+   <updated>2016-05-23T08:21:00-04:00</updated>
+   <id>http://bsk.education/CSNYC_Python/2016/05/23/todo-list-app</id>
+   <content type="html">&lt;h2 id=&quot;span-classmega-octicon-octicon-tasklistspan-todo-list-app&quot;&gt;&lt;span class=&quot;mega-octicon octicon-tasklist&quot;&gt;&lt;/span&gt; Todo List App&lt;/h2&gt;
+
+&lt;p&gt;We’re going to create to-do list app.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;ToDo&lt;/code&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Specification&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Points&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Empty dictionary to store information&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Key for each day of the week&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Each key has a list value that stores items&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;User is prompted&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;User can type &lt;code class=&quot;highlighter-rouge&quot;&gt;add&lt;/code&gt; program will ask what day and add it correctly&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;User can type &lt;code class=&quot;highlighter-rouge&quot;&gt;get&lt;/code&gt; and the program will ask for the day and print the values&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Extensions&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Points&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Use .split() to allow the user to type &lt;code class=&quot;highlighter-rouge&quot;&gt;get Friday&lt;/code&gt; and see the values&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Use .split() to make &lt;code class=&quot;highlighter-rouge&quot;&gt;add Friday watch tv and relax&lt;/code&gt; update the list&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;_ / 8&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Example Output&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;What would you like to do?
+add
+What day?
+Friday
+What would you like to add to Friday&#39;s to-do list?
+practice clarinet
+What would you like to do?
+get
+What day?
+Friday
+You have to practice clarinet.
+What would you like to do?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;our-notes&quot;&gt;Our notes&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# some way to add&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# some way to read&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;some_dictionary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;monday&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[]&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;#days of the week&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# loop this question...&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;#append the action to the list value of the day keys&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;some_dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#until you...&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# I need an option to call choice()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;some_dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# I need an option to call choice()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;choice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;user_choice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;How can I help you?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# if they choose &#39;add&#39; call add()&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# if they choose &#39;get&#39; call get()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;monday&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;monday&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-todopy&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub in a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;ToDo.py&lt;/code&gt;&lt;/h4&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dictionaries of Lists</title>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/20/dictionaries-of-lists/"/>
+   <updated>2016-05-20T16:38:00-04:00</updated>
+   <id>http://bsk.education/CSNYC_Python/2016/05/20/dictionaries-of-lists</id>
+   <content type="html">&lt;h2 id=&quot;span-classmega-octicon-octicon-clockspan-do-now-answer-in-google-classroom&quot;&gt;&lt;span class=&quot;mega-octicon octicon-clock&quot;&gt;&lt;/span&gt; Do Now (answer in Google Classroom)&lt;/h2&gt;
+
+&lt;!-- ```python
+list_dictionaries = {
+ &#39;i&#39;: [1, 3, 4],
+ &#39;am&#39;: [1, 2, 3, 4]
+}
+print list_dictionaries
+# What type of data is list_dictionaries?
+# What type of data are list_dictionaries keys?
+# What type of data are list_dictionaries values??
+# Update the value of &#39;am&#39; to [1, 2, 3, 4, 5]
+``` --&gt;
+
+&lt;p&gt;WITHOUT using PyCharm, predict what is printed by the code below:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;this_is_a_dictionary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;dog&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;elephant&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_is_a_dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dog&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;span-classmega-octicon-octicon-mortar-boardspan-mini-lesson&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mortar-board&quot;&gt;&lt;/span&gt; Mini-Lesson&lt;/h2&gt;
+
+&lt;p&gt;Last time, we saw that dictionaries can pair keys of any data type with values of any data type. We paired strings with strings last time, but now we’re going to pair strings with lists.&lt;/p&gt;
+
+&lt;p&gt;Let’s review how we &lt;strong&gt;add&lt;/strong&gt; values to a dictionary.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list_dictionaries&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;&#39;i&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+ &lt;span class=&quot;s&quot;&gt;&#39;am&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;list_dictionaries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;groot&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# update the key &#39;groot&#39; with a list value&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What if I know what to add the string &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;6&quot;&lt;/code&gt; to the key &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;groot&quot;&lt;/code&gt;? How do we add things to a list? &lt;code class=&quot;highlighter-rouge&quot;&gt;.append()&lt;/code&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list_dictionaries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;groot&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;six&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;span-classmega-octicon-octicon-tasklistspan-todo-list-app&quot;&gt;&lt;span class=&quot;mega-octicon octicon-tasklist&quot;&gt;&lt;/span&gt; Todo List App&lt;/h2&gt;
+
+&lt;p&gt;We’re going to create to-do list app.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;ToDo&lt;/code&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Specification&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Points&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Empty dictionary to store information&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Key for each day of the week&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Each key has a list value that stores items&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;User is prompted&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;User can type &lt;code class=&quot;highlighter-rouge&quot;&gt;add&lt;/code&gt; program will ask what day and add it correctly&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;User can type &lt;code class=&quot;highlighter-rouge&quot;&gt;get&lt;/code&gt; and the program will ask for the day and print the values&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Extensions&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Points&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Use .split() to allow the user to type &lt;code class=&quot;highlighter-rouge&quot;&gt;get Friday&lt;/code&gt; and see the values&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Use .split() to make &lt;code class=&quot;highlighter-rouge&quot;&gt;add Friday watch tv and relax&lt;/code&gt; update the list&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;_ / 8&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Example Output&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;What would you like to do?
+add
+What day?
+Friday
+What would you like to add to Friday&#39;s to-do list?
+practice clarinet
+What would you like to do?
+get
+What day?
+Friday
+You have to practice clarinet.
+What would you like to do?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-todopy&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub in a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;ToDo.py&lt;/code&gt;&lt;/h4&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Dictionary Methods</title>
-   <link href="http://bsk.education/CS11/2016/05/17/dictionary-methods/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/17/dictionary-methods/"/>
    <updated>2016-05-17T18:39:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/05/17/dictionary-methods</id>
+   <id>http://bsk.education/CSNYC_Python/2016/05/17/dictionary-methods</id>
    <content type="html">&lt;h2 id=&quot;span-classmega-octicon-octicon-clockspan-do-now-in-google-classroom&quot;&gt;&lt;span class=&quot;mega-octicon octicon-clock&quot;&gt;&lt;/span&gt; Do Now (In Google Classroom)&lt;/h2&gt;
 
 &lt;p&gt;How are dictionaries similar to lists? How are they different?&lt;/p&gt;
@@ -152,9 +738,9 @@ The program will first create a dictionary with the words as keys and the number
  
  <entry>
    <title>Dictionaries</title>
-   <link href="http://bsk.education/CS11/2016/05/16/dictionaries/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/16/dictionaries/"/>
    <updated>2016-05-16T22:05:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/05/16/dictionaries</id>
+   <id>http://bsk.education/CSNYC_Python/2016/05/16/dictionaries</id>
    <content type="html">&lt;h2 id=&quot;do-now&quot;&gt;Do Now&lt;/h2&gt;
 
 &lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
@@ -244,9 +830,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title>Getting Loopy</title>
-   <link href="http://bsk.education/CS11/2016/05/06/getting-loopy/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/06/getting-loopy/"/>
    <updated>2016-05-06T23:36:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/05/06/getting-loopy</id>
+   <id>http://bsk.education/CSNYC_Python/2016/05/06/getting-loopy</id>
    <content type="html">&lt;h2 id=&quot;do-now&quot;&gt;Do Now&lt;/h2&gt;
 
 &lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
@@ -362,9 +948,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title>d_vwl</title>
-   <link href="http://bsk.education/CS11/2016/05/03/d_vwl/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/03/d_vwl/"/>
    <updated>2016-05-03T23:31:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/05/03/d_vwl</id>
+   <id>http://bsk.education/CSNYC_Python/2016/05/03/d_vwl</id>
    <content type="html">&lt;h2 id=&quot;remove-the-vowels&quot;&gt;Remove the Vowels&lt;/h2&gt;
 
 &lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
@@ -422,9 +1008,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title><strike>Quiz &</strike> Review</title>
-   <link href="http://bsk.education/CS11/2016/05/02/quiz-review/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/05/02/quiz-review/"/>
    <updated>2016-05-02T16:48:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/05/02/quiz-review</id>
+   <id>http://bsk.education/CSNYC_Python/2016/05/02/quiz-review</id>
    <content type="html">&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
 &lt;kbd&gt;In PyCharm, create a file called &lt;mark&gt;May 2 Quiz&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
 
@@ -472,9 +1058,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title>Scope</title>
-   <link href="http://bsk.education/CS11/2016/04/19/scope/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/04/19/scope/"/>
    <updated>2016-04-19T21:57:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/04/19/scope</id>
+   <id>http://bsk.education/CSNYC_Python/2016/04/19/scope</id>
    <content type="html">&lt;h2 id=&quot;do-now-in-notebook&quot;&gt;⏳ Do Now (in notebook)&lt;/h2&gt;
 
 &lt;p&gt;Rank the following from easiest to hardest:&lt;/p&gt;
@@ -644,9 +1230,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title>Practice Makes Perfect</title>
-   <link href="http://bsk.education/CS11/2016/04/18/practice-makes-perfect/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/04/18/practice-makes-perfect/"/>
    <updated>2016-04-18T23:16:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/04/18/practice-makes-perfect</id>
+   <id>http://bsk.education/CSNYC_Python/2016/04/18/practice-makes-perfect</id>
    <content type="html">&lt;h2 id=&quot;do-now-smallin-google-classroomsmall&quot;&gt;Do Now &lt;small&gt;(In Google Classroom)&lt;/small&gt;&lt;/h2&gt;
 
 &lt;p&gt;In Python, what is the difference between return and print?&lt;/p&gt;
@@ -690,9 +1276,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title>War!</title>
-   <link href="http://bsk.education/CS11/2016/04/15/War/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/04/15/War/"/>
    <updated>2016-04-15T00:00:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/04/15/War</id>
+   <id>http://bsk.education/CSNYC_Python/2016/04/15/War</id>
    <content type="html">&lt;h2 id=&quot;war-card-game&quot;&gt;War (Card Game)&lt;/h2&gt;
 
 &lt;p&gt;1) Create a program that lets a user play the card game &lt;a href=&quot;https://en.wikipedia.org/wiki/War_(card_game)&quot;&gt;‘War’&lt;/a&gt;.&lt;/p&gt;
@@ -744,9 +1330,9 @@ In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt
  
  <entry>
    <title><code>return</code> vs. <code>print</code></title>
-   <link href="http://bsk.education/CS11/2016/04/11/returnVSprint/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/04/11/returnVSprint/"/>
    <updated>2016-04-11T00:00:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/04/11/returnVSprint</id>
+   <id>http://bsk.education/CSNYC_Python/2016/04/11/returnVSprint</id>
    <content type="html">&lt;h2 id=&quot;do-now&quot;&gt;🎯 Do Now&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Open up PyCharm. Paste the following code into the editor:&lt;/strong&gt;&lt;/p&gt;
 
@@ -896,9 +1482,9 @@ Instead of closing the program when the deck is empty, create a way for the user
  
  <entry>
    <title>Rock || Paper || Scissors</title>
-   <link href="http://bsk.education/CS11/2016/04/07/rock-paper-scissors/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/04/07/rock-paper-scissors/"/>
    <updated>2016-04-07T14:41:00-04:00</updated>
-   <id>http://bsk.education/CS11/2016/04/07/rock-paper-scissors</id>
+   <id>http://bsk.education/CSNYC_Python/2016/04/07/rock-paper-scissors</id>
    <content type="html">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Play Rock || Paper || Scissors&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
@@ -936,9 +1522,9 @@ Instead of closing the program when the deck is empty, create a way for the user
  
  <entry>
    <title>Debugging</title>
-   <link href="http://bsk.education/CS11/2016/02/23/debugging/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/02/23/debugging/"/>
    <updated>2016-02-23T07:33:00-05:00</updated>
-   <id>http://bsk.education/CS11/2016/02/23/debugging</id>
+   <id>http://bsk.education/CSNYC_Python/2016/02/23/debugging</id>
    <content type="html">&lt;h2 id=&quot;ruh-roh-broken-code-smallthanks-aileensmall&quot;&gt;Ruh roh broken code &lt;small&gt;(Thanks, Aileen!)&lt;/small&gt;&lt;/h2&gt;
 
 &lt;p class=&quot;lead&quot;&gt;Read the error messages. Try to fix the bugs, and include a comment for what you changed, and &lt;mark&gt;why&lt;/mark&gt;.&lt;/p&gt;
@@ -953,9 +1539,9 @@ Instead of closing the program when the deck is empty, create a way for the user
  
  <entry>
    <title>Quiz App</title>
-   <link href="http://bsk.education/CS11/2016/02/12/quiz-app/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/02/12/quiz-app/"/>
    <updated>2016-02-12T07:35:00-05:00</updated>
-   <id>http://bsk.education/CS11/2016/02/12/quiz-app</id>
+   <id>http://bsk.education/CSNYC_Python/2016/02/12/quiz-app</id>
    <content type="html">&lt;!-- 
 &lt;div class=&quot;page-header&quot;&gt;
 			&lt;h1&gt;
@@ -990,9 +1576,9 @@ Instead of closing the program when the deck is empty, create a way for the user
  
  <entry>
    <title>Find Average</title>
-   <link href="http://bsk.education/CS11/2016/02/09/find-average/"/>
+   <link href="http://bsk.education/CSNYC_Python/2016/02/09/find-average/"/>
    <updated>2016-02-09T09:04:00-05:00</updated>
-   <id>http://bsk.education/CS11/2016/02/09/find-average</id>
+   <id>http://bsk.education/CSNYC_Python/2016/02/09/find-average</id>
    <content type="html">&lt;p&gt;In this assignment, you’re going to create an app to calculate your GPA. The code will look something like this:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# variable = input(&quot;question?&quot;)&lt;/span&gt;
@@ -1010,6 +1596,16 @@ Instead of closing the program when the deck is empty, create a way for the user
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What&#39;s your grade in math?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Test &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Test! &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
 &lt;/div&gt;
 </content>
  </entry>
