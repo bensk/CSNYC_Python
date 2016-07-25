@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Syllabus
+title: Readme
 ---
 
 ## Day 1: Intro to Python
