@@ -48,3 +48,17 @@ jekyll-archives:
     category: '/category/:name/'
 
 future: true
+
+
+pages: ./_pages
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - LICENSE
+  - README.md
+  - spec
