@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Lesson 0 👉 Welcome to Python
+layout: "page"
+title: "Lesson 0 👉 Welcome to Python"
 ---
 
 | 🎯  Learning Targets                                          |
