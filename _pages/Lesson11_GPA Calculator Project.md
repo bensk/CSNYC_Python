@@ -4,7 +4,7 @@ title: Project 1 👉 GPA Calculator
 ---
 
 ## ⏳ A <sub>little</sub> Review
-Python understands data in the form of ______, ______, and _____.
+Python understands data in the form of _____, _____, and _____.
 
 Use your IDE of choice to find out what these do, noting the effect in `#comments`.
 
