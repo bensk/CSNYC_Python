@@ -3,7 +3,7 @@ layout: page
 title: Project 1 👉 GPA Calculator
 ---
 
-## ⏳ A <small>Little</small> Review
+## ⏳ A <sub>little</sub> Review
 Python understands data in the form of ______, ______, and _____.
 
 Use your IDE of choice to find out what these do, noting the effect in `#comments`.
@@ -27,7 +27,7 @@ print "The meaning of life is" + 42
 ## GPA Calculator
 
 | Specification                                     | ✅                            |
-|---------------------------------------------------|------------------------------|
+|---------------------------------------------------|:------------------------------:|
 | Create a variable for each class (at your school) | ☑️                            |
 | Make each variable an `input`                     | ☑️                            |
 | Add up the value of each class...                 | ☑️                            |
