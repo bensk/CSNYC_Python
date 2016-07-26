@@ -33,4 +33,3 @@ print "The meaning of life is" + 42
 | Add up the value of each class...                 | ☑️                            |
 | ...divide by...you know                           | ☑️                            |
 | Tell the user their average                       | ☑️                            |
-| Check yourself...                                 | <small>...before you debug yourself </small>|
