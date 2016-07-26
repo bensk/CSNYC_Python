@@ -49,7 +49,7 @@ jekyll-archives:
 
 future: true
 
-
+include: ['_pages']
 pages: ./_pages
 defaults:
   -
