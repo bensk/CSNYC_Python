@@ -18,7 +18,7 @@ title: Readme
 
 Plan Lessons around what you’ve learned or practice skills
 
-What do I want from volunteers?
+**What do I want from volunteers?**
 - [ ] Don't touch the keyboard
 - [ ] Ask questions
 - [ ] Give examples
