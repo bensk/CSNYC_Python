@@ -11,7 +11,8 @@ title: Readme
 - User input
 - Project: GPA Calculator
 - String Methods & Conditionals
-**Project: Quiz App**
+- **Project: Guessing Game**
+- **Project: Quiz App**
 
 ## Day 2: Functions & Lesson Planning
 **Project: MadLibs**
