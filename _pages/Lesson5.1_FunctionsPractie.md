@@ -76,4 +76,3 @@ It should look like this:
     *****
     *****
     *****
-    
