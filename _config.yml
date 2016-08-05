@@ -7,7 +7,7 @@ permalink:           pretty
 # Setup
 title:               Python
 tagline:             The Full Monty
-description:         ...for pedagogues
+description:         for pedagogues!
 url:                 http://bsk.education/CSNYC_Python
 paginate:            1
 baseurl:             "/CSNYC_Python"
