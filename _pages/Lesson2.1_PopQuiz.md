@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project 2 👉 Quiz App
+title: Project 2 🛠 Quiz App
 ---
 
 ## ❗ Pop Quiz!

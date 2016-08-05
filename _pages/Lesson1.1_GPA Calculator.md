@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project 1 👉 GPA Calculator
+title: Project 1 🛠 GPA Calculator
 ---
 
 ## ⏳ A <sub>little</sub> Review
