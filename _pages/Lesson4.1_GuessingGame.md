@@ -10,6 +10,22 @@ You will write a Python program to choose a random number between 1 and 10 and t
 # You will need a while loop
 ```
 
+## <span class="mega-octicon octicon-alert"></span> Hold up wait a minute
+```python
+import random
+random.randint(0, 3)
+random.randint(0, 3)
+print(random.randint(0, 3))
+print(random.randint(0, 3))
+print(random.randint(0, 3))
+# In comments:
+# What does randint do?
+# What do the values 0 and 3 do?
+# Try changing those numbers, rerun the program, and write down what changed.
+# What is the difference between random.randint(0,3) and print(random.randint(0,3))?
+```
+
+
 If the user's guess matches the random number, the user wins. If not, the user loses. In either case, the user should be shown a message indicating whether she won or lost and the secret random number should be revealed.
 
 1. Write the simple version of the guessing game program described above.
