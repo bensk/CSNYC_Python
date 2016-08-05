@@ -54,7 +54,7 @@ Write a for loop to print only the odd numbers from this list
 
 `list = [3,4,7,13,54,32,653,256,1,41,65,83,92,31]``
 
-Now, iterate and turn your loop into a function called find_odds that takes an input and prints the odd numbers in ANY list.
+Now, iterate and turn your loop into a function called `find_odds` that takes an input and prints the odd numbers in ANY list.
 
 `def find_odds(input):``
 
@@ -63,11 +63,10 @@ To exceed standards, create functions to ADD all of the odd numbers in a list. T
 `def odd_sum(input):`   
 `def even_sum(input):`
 
-## Test your code
+## Make a random list
 ```python
 import random
 my_randoms = random.sample(range(100), 15)
-# what datatype does this make?
 ```
 
 ### Checklist
