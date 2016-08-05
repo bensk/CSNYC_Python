@@ -10,7 +10,7 @@ print "Hello, world."
 # Sorry, I had to.
 ```
 
-What did you see some out?
+What did you see come out?
 
 ## ✍ Python Notes
 ✅ A variables stores **data** and gives it a **name**.    
