@@ -4,7 +4,7 @@ title: Project 2 🛠 Quiz App
 ---
 
 ## ❗ Pop Quiz!
-<small>(That you are writing</small>
+<small>(That you are writing)</small>
 
 ```python
 harry_potter = raw_input("What's Harry Potter's middle name?")
