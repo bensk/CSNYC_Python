@@ -3,9 +3,13 @@ layout: page
 title: Lesson 5.1 👉 Functions Practice
 ---
 
-1) Write a function, `max_value`, that takes in an integer and prints the numbers from 1 to that number inclusively.
 
-2) Write a function, `compare_lists`, that given two lists of numbers the same length, compares each element of the lists, and print out the higher value at each index.
+## Maximum Value
+Write a function, `max_value`, that takes in an integer and prints the numbers from 1 to that number inclusively.
+
+
+## Beyond Compare
+Write a function, `compare_lists`, that given two lists of numbers the same length, compares each element of the lists, and print out the higher value at each index.
 
 ```python
 list1 = [4,5,15,11,23,42]
@@ -15,7 +19,9 @@ compare_lists(list1, list2)
 # 4 8 15 16 23 42 should print out
 ```
 
-3) Write a function, `swapping_stars`, that will print out the following:
+
+## Stars
+Write a function, `swapping_stars`, that will print out the following:
 
 ```
 * - * - * -
@@ -26,17 +32,29 @@ compare_lists(list1, list2)
 - * - * - *
 ```
 
-## Extra Credit
+## <code>is_even</code>
 
-Write a function, `find_secret`, that takes in a list of lists and an item. Once it finds the item it will print both indexes of where the item is.
+1. Define a function is_even that will take a number x as input.
+2. If x is even, then return True.
+3. Otherwise, return False.
 
-Example:
+## <code>is_int</code>
+
+1. Define a function <code>is_int</code> that takes a number <code>x</code> as an input.
+2. Have it <code>return True</code> if the number is an integer (as defined above) and <code>False</code> otherwise.
 
 ```python
-list_of_lists = [['where', 'is', 'the'],
-['very', 'secret', 'word'],
-['i', 'can', 'find']
-]
-secret_item = 'secret'
-find_secret(list_of_lists, secret_item) # will print:  1, 1
+# For example
+
+is_int(7.0)   # True
+is_int(7.5)   # False
+is_int(-1)    # True
 ```
+
+## <code>digit_sum</code>
+
+Write a function called <code>digit_sum</code> that takes a positive integer <code>n</code> as input and returns the sum of all that number's digits.
+
+For example: <code>digit_sum(1234)</code> should return <code>10</code> which is <code>1 + 2 + 3 + 4</code>.
+
+(Assume that the number you are given will always be positive.)
