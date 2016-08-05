@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson 3.3 ♻ GPA Calculator
+title: Project 3 ♻ GPA Calculator
 ---
 
 ## ✍ Let’s Iterate
