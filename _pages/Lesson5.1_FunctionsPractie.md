@@ -58,3 +58,22 @@ Write a function called <code>digit_sum</code> that takes a positive integer <co
 For example: <code>digit_sum(1234)</code> should return <code>10</code> which is <code>1 + 2 + 3 + 4</code>.
 
 (Assume that the number you are given will always be positive.)
+
+## Rectangle
+Write a function called `rctangle`. It takes two numbers as user input, and prints a rectangle.
+
+It should look like this:
+
+    Enter width: 5
+    Enter height: 10
+    *****
+    *****
+    *****
+    *****
+    *****
+    *****
+    *****
+    *****
+    *****
+    *****
+    
