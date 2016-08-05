@@ -28,4 +28,4 @@ else:
 |Anticipate errors <small> (For example, if the answer is “a”, would “A” also be acceptable?) </small>  |  1 |
 | **Extension**  |   |
 |Figure out how to add up correct answers and tell the user her score.|.5|
-|If you have the user enter non-numeric answers, think and cover the different ways a user could enter a correct answer.|.5||
+|If you have the user enter non-numeric answers, think and cover the different ways a user could enter a correct answer.|.5|
