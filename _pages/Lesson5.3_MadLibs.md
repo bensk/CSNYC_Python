@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project 5 🛠 MadLibs
+title: Project 6 🛠 MadLibs
 ---
 
 | Functional Correctness (Behavior)                 |   Points   |
