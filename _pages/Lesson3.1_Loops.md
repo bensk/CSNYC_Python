@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson 3.1 👉 Loops
+title: Lesson 3.1 👉 `for` Loops
 ---
 
 ## ✍ Loop

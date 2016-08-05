@@ -9,8 +9,10 @@ title: Readme
 - Datatypes
 - Variables
 - User input
-- Project: GPA Calculator
-- String Methods & Conditionals
+- `for` loops
+- String Methods
+- Conditionals
+- **Project: GPA Calculator**
 - **Project: Guessing Game**
 - **Project: Quiz App**
 
