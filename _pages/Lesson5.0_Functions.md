@@ -19,6 +19,37 @@ print(random.randint(0, 3))
 # What is the difference between random.randint(0,3) and print(random.randint(0,3))?
 ```
 
+This is a built-in function.
+
+## Functions
+Why use functions?    
+**→ Reusable Code**    
+If you find yourself doing something more than once, make it a function.
+
+_In other words..._
+- **Be lazy. **
+- **Don’t repeat yourself. **
+- **Make the computer do the work.**
+
+### Functions have to be defined and then called:
+```python
+def name_of_function(this):
+  """What it do???"""
+  print "It prints " + this + "!"
+```
+
+Take a look at this one...
+
+```python
+def power(base, exponent):  
+    result = base**exponent
+    print "%d to the power of %d is %d." % (base, exponent, result)
+
+power(37, 4)  
+```
+
+
+
 Write a for loop to print only the odd numbers from this list
 
 `list = [3,4,7,13,54,32,653,256,1,41,65,83,92,31]``
