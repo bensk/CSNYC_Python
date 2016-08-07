@@ -60,7 +60,7 @@ For example: <code>digit_sum(1234)</code> should return <code>10</code> which is
 (Assume that the number you are given will always be positive.)
 
 ## Rectangle
-Write a function called `rctangle`. It takes two numbers as user input, and prints a rectangle.
+Write a function called `rectangle`. It takes two numbers as user input, and prints a rectangle.
 
 It should look like this:
 

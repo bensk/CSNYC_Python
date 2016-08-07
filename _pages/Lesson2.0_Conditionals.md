@@ -9,7 +9,7 @@ So far we've seen data in 3 forms:
 | Datatype | Example                | Explanation                         |
 |:---------|:-----------------------|:------------------------------------|
 | Numbers  | `yourAverage = 3.8`    | Integers or floats                  |
-| Strings  | `myName= "Ben"`        | Anything inside "quotes"            |
+| Strings  | `myName = "Ben"`        | Anything inside "quotes"            |
 | Booleans | `isItSaturday = False` | <kbd>true</kbd> or <kbd>false</kbd> |
 
 ## ✍ Conditionals

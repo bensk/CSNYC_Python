@@ -13,7 +13,9 @@ while n>0:
 ```
 
 ~~bad stuff~~
-infinite loop!
+infinite loop! [^pycharm]
+
+[^pycharm]: PyCharm will stop these for you. You can also use `ctrl+c` to stop it in the command line.
 
 ## ✍ while Loop
 Code that repeats while a condition is true.

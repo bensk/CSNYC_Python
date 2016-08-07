@@ -17,13 +17,13 @@ What did you see come out?
 ✅ Two kinds of data are **numbers** and **booleans**.    
 ✅ In Python, **white space** is used to structure code.     
 ✅ The **interpreter** runs your code line by line.    
-✅ **#** makes a single-line comment in Python.    
+✅ **#** makes a comment in Python.    
 
 ### Python Variables
 can be    
 **Numbers** `myAge = 37`    
 or    
-**Strings** `myName= "Ben"`    
+**Strings** `myName = "Ben"`    
 or    
 **Booleans** `isItSaturday = False`
 
