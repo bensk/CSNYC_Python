@@ -36,5 +36,5 @@ I'll recommend a few different solutions, depending on the age of the student's 
 |:------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|:---------------------------------------|
 | [Trinket](https://trinket.io/)                                                            | Beginners. Login with Google. No installs needed. Helpful hints. | To learn how code is actually written. |
 | [IDLE](https://www.python.org/downloads/)                                                 | What you get for installing Python. Nothing to configure.        | If you can install PyCharm...          |
-| [PyCharm (EDU Edition)](https://www.jetbrains.com/PyCharm-edu/download/)                  | Projecting on a screen. Professional Python development.         | If you prefer...                       |
+| [PyCharm (EDU Edition)](https://www.jetbrains.com/pycharm-edu/)                  | Projecting on a screen. Professional Python development.         | If you prefer...                       |
 | Some Text Editor ([Atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/)) | Everything                                                       | Never. This is your tool chest, your Swiss Army Knife, your duct tape.         |
