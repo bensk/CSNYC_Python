@@ -5,9 +5,11 @@ title: "Lesson 0 👉 Welcome to Python"
 
 | 🎯  Learning Targets                                          |
 |:--------------------------------------------------------------|
-|                                                               |
 | I can type and run Python code on my computer and on the web. |
-|                                                               |
+| I can compare tools for writing and debugging Python  |
+| I can use conditionals and loops to solve programming challenges |
+| I can identify pedagogical challenges of text-based coding |
+| I can compare and contrast teaching Python and teaching my primary content area.|
 
 ## 🐍 Python
 A popular & powerful programming language.
