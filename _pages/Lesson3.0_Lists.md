@@ -32,6 +32,17 @@ do_now = ["words", "stuff", "wrong", "this", "right", "question", "got", "you"]
 print do_now[7] + do_now[6] + do_now[3] + do_now[2]
 ```
 
+**Putting Things Into a List**
+
+```python
+suitcase = []
+print suitcase
+suitcase.append("sunglasses")
+print suitcase
+```
+
+What does `.append()` do?
+
 - What if we wanted to find the average of an _entire_ class?
 - What if we wanted to add another subject?
 - What if we don't want to type the same thing over and over and over and over and over and over and over and over and over again?
