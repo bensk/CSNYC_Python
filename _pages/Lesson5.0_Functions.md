@@ -19,7 +19,7 @@ print random.randint(0, 3)
 # What is the difference between random.randint(0,3) and print(random.randint(0,3))?
 ```
 
-`print` is a built-in function– it takes an input and produces some output when you use it. 
+`print` is a built-in function– it takes an input and produces some output when you use it.
 
 ## Functions
 Why use functions?    
@@ -27,6 +27,7 @@ Why use functions?
 If you find yourself doing something more than once, make it a function.
 
 _In other words..._
+
 - **Be lazy. **
 - **Don’t repeat yourself. **
 - **Make the computer do the work.**
